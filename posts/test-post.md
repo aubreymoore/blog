@@ -1,4 +1,4 @@
-.. title: Test Post
+.. title: Configuring Nikola and Adding Full Text Search
 .. slug: test-post
 .. date: 2016-12-29 07:43:54 UTC+10:00
 .. tags: Nikola
