@@ -11,11 +11,11 @@
  </sitemap>
  <sitemap>
   <loc>https://example.com/categories/github-pages.xml</loc>
-  <lastmod>2017-02-11T01:43:00Z</lastmod>
+  <lastmod>2017-02-11T01:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://example.com/categories/nikola.xml</loc>
-  <lastmod>2017-02-11T01:51:00Z</lastmod>
+  <lastmod>2017-02-11T02:08:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://example.com/categories/pythonanywhere.xml</loc>
@@ -35,10 +35,10 @@
  </sitemap>
  <sitemap>
   <loc>https://example.com/rss.xml</loc>
-  <lastmod>2017-02-11T01:51:00Z</lastmod>
+  <lastmod>2017-02-11T02:08:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://example.com/sitemap.xml</loc>
-  <lastmod>2017-02-11T01:51:00Z</lastmod>
+  <lastmod>2017-02-11T02:08:00Z</lastmod>
  </sitemap>
 </sitemapindex>
