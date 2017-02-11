@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="This is a demo site for Nikola.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aubrey Moore</title>
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<link rel="canonical" href="https://example.com/">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="assets/css/tipuesearch.css">
+<link rel="prefetch" href="posts/failed-attempt-to-run-wep2py-on-dreamhost/" type="text/html">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://example.com/">
+
+                <span id="blog-title">Aubrey Moore</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="archive.html">Archive</a>
+                </li>
+<li>
+<a href="categories/">Tags</a>
+                </li>
+<li>
+<a href="rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<span class="navbar-form navbar-left">
+<input type="text" id="tipue_search_input" class="form-control" placeholder="Search"></span>
+
+            <ul class="nav navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+
+    
+<div class="postindex">
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/failed-attempt-to-run-wep2py-on-dreamhost/" class="u-url">Failed Attempt to Run wep2py on Dreamhost</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Aubrey Moore
+            </span></p>
+            <p class="dateline"><a href="posts/failed-attempt-to-run-wep2py-on-dreamhost/" rel="bookmark"><time class="published dt-published" datetime="2017-02-11T09:28:41+10:00" title="2017-02-11 09:28">2017-02-11 09:28</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<h2>Failed Attempt to Run wep2py on Dreamhost</h2>
+<p>Saturday, 11. February 2017 06:37AM </p>
+<ul>
+<li>SSH to DreamHost shared hosting.</li>
+<li>Run python. Version is 2.7.3</li>
+<li>virtualenv is available</li>
+</ul>
+<h3>Create virtualenv</h3>
+<ul>
+<li>Reference http://docs.python-guide.org/en/latest/dev/virtualenvs/</li>
+</ul>
+<pre class="code literal-block"><span></span><span class="n">mkdir</span> <span class="n">my_project_folder</span>
+<span class="n">cd</span> <span class="n">my_project_folder</span>
+<span class="n">virtualenv</span> <span class="n">venv</span>
+<span class="n">source</span> <span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">requests</span>
+<span class="n">deactivate</span>
+</pre>
+
+
+<h3>Download web2py</h3>
+<pre class="code literal-block"><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">mdipierro</span><span class="o">.</span><span class="n">pythonanywhere</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">examples</span><span class="o">/</span><span class="n">static</span><span class="o">/</span><span class="n">web2py_src</span><span class="o">.</span><span class="n">zip</span>
+<span class="n">unzip</span> <span class="n">web2py_src</span><span class="o">.</span><span class="n">zip</span>
+<span class="n">rm</span> <span class="n">web2py_src</span><span class="o">.</span><span class="n">zip</span>
+</pre>
+
+
+<h3>First Attempt</h3>
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="n">venv</span><span class="p">)</span><span class="n">aubreymoore</span><span class="nd">@cactus</span><span class="p">:</span><span class="o">~/</span><span class="n">my_project_folder</span> <span class="err">$</span> <span class="n">cd</span> <span class="n">web2py</span>
+<span class="p">(</span><span class="n">venv</span><span class="p">)</span><span class="n">aubreymoore</span><span class="nd">@cactus</span><span class="p">:</span><span class="o">~/</span><span class="n">my_project_folder</span><span class="o">/</span><span class="n">web2py</span> <span class="err">$</span> <span class="n">ls</span>
+<span class="n">CHANGELOG</span>  <span class="n">LICENSE</span>  <span class="n">MANIFEST</span><span class="o">.</span><span class="ow">in</span>  <span class="n">NEWINSTALL</span>  <span class="n">README</span><span class="o">.</span><span class="n">markdown</span>  <span class="n">VERSION</span>  <span class="n">anyserver</span><span class="o">.</span><span class="n">py</span>  <span class="n">applications</span>  <span class="n">examples</span>  <span class="n">extras</span>  <span class="n">gluon</span>  <span class="n">handlers</span>  <span class="n">scripts</span>  <span class="n">site</span><span class="o">-</span><span class="n">packages</span>  <span class="n">web2py</span><span class="o">.</span><span class="n">py</span>
+<span class="p">(</span><span class="n">venv</span><span class="p">)</span><span class="n">aubreymoore</span><span class="nd">@cactus</span><span class="p">:</span><span class="o">~/</span><span class="n">my_project_folder</span><span class="o">/</span><span class="n">web2py</span> <span class="err">$</span> <span class="n">python</span> <span class="n">web2py</span><span class="o">.</span><span class="n">py</span>
+<span class="n">web2py</span> <span class="n">Web</span> <span class="n">Framework</span>
+<span class="n">Created</span> <span class="n">by</span> <span class="n">Massimo</span> <span class="n">Di</span> <span class="n">Pierro</span><span class="p">,</span> <span class="n">Copyright</span> <span class="mi">2007</span><span class="o">-</span><span class="mi">2017</span>
+<span class="n">Version</span> <span class="mf">2.14</span><span class="o">.</span><span class="mi">6</span><span class="o">-</span><span class="n">stable</span><span class="o">+</span><span class="n">timestamp</span><span class="o">.</span><span class="mf">2016.05</span><span class="o">.</span><span class="mf">10.00</span><span class="o">.</span><span class="mf">21.47</span>
+<span class="n">Database</span> <span class="n">drivers</span> <span class="n">available</span><span class="p">:</span> <span class="n">sqlite3</span><span class="p">,</span> <span class="n">imaplib</span><span class="p">,</span> <span class="n">pyodbc</span><span class="p">,</span> <span class="n">pymysql</span><span class="p">,</span> <span class="n">pg8000</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">web2py</span><span class="p">:</span><span class="n">GUI</span> <span class="ow">not</span> <span class="n">available</span> <span class="n">because</span> <span class="n">Tk</span> <span class="n">library</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">installed</span>
+<span class="n">choose</span> <span class="n">a</span> <span class="n">password</span><span class="p">:</span>
+
+<span class="n">please</span> <span class="n">visit</span><span class="p">:</span>
+    <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">8000</span><span class="o">/</span>
+<span class="n">use</span> <span class="s2">"kill -SIGTERM 28797"</span> <span class="n">to</span> <span class="n">shutdown</span> <span class="n">the</span> <span class="n">web2py</span> <span class="n">server</span>
+</pre>
+
+
+<ul>
+<li>wep2py seems to run properly, but the local server it sets up is inaccessable</li>
+</ul>
+<h3>Helpful Sites</h3>
+<ul>
+<li>https://groups.google.com/forum/#!topic/web2py/nixNhDrxHtQ</li>
+</ul>
+<h3>Seems Overly Complicated - Give Up and Deploy to pythonanywhere</h3>
+<ul>
+<li>to clean up, we simply delete my_project_folder</li>
+</ul>
+<pre class="code literal-block"><span></span><span class="n">cd</span> <span class="o">~</span>
+<span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="n">my_project_folder</span>
+</pre>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/nikola-site-is-on-github/" class="u-url">Nikola Site is on GitHub</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Aubrey Moore
+            </span></p>
+            <p class="dateline"><a href="posts/nikola-site-is-on-github/" rel="bookmark"><time class="published dt-published" datetime="2016-12-29T10:14:01+10:00" title="2016-12-29 10:14">2016-12-29 10:14</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p><a href="https://github.com/getnikola/nikola-site">Here it is.</a></p>
+<p>Need to go to work now.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/taxonomic-notes/" class="u-url">Taxonomic Notes</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Aubrey Moore
+            </span></p>
+            <p class="dateline"><a href="posts/taxonomic-notes/" rel="bookmark"><time class="published dt-published" datetime="2016-12-29T08:43:00+10:00" title="2016-12-29 08:43">2016-12-29 08:43</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<h4>Recording Synonyms</h4>
+<ul>
+<li>
+<p>According to <a href="http://www.gbif.org/system/files_force/gbif_resource/resource-80642/gbif_gna_profile_reference_guide.pdf?download=1">GBIF GNA Profile Reference Guide for Darwin Core Archive, Core Terms and Extensions</a>: "Synonyms occupy separate lines and therefore also have unique taxonIDs."</p>
+</li>
+<li>
+<p>In <a href="http://www.gbif.org/system/files_force/gbif_resource/resource-80647/checklist_how-tw.v2.pdf">Publishing Species Checklists, Step-by-Step Guide</a>, there is a good example of how to handle synonyms on page 18.  This is a very good, detailed reference.</p>
+</li>
+<li>
+<p>Several references indicate that misspellings should be noted in <strong>dwc:taxonRemarks</strong>. Example: "this name is a misspelling in common use"</p>
+</li>
+</ul>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/test-post/" class="u-url">Test Post</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Aubrey Moore
+            </span></p>
+            <p class="dateline"><a href="posts/test-post/" rel="bookmark"><time class="published dt-published" datetime="2016-12-29T07:43:54+10:00" title="2016-12-29 07:43">2016-12-29 07:43</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<h4>My test post.</h4>
+<p>is here</p>
+<p>This <a href="http://simonvanderveldt.nl/configuring-nikola/">post</a> was helpful in learning how to configure Nikola.</p>
+<p>Here's a post that shows how to add full text search to a Nikola site.</p>
+<p><a href="http://ralsina.me/weblog/posts/standalone-search-in-nikola.html#id2">Here's a post that shows how to add full text search to a Nikola site.</a> </p>
+</div>
+    </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+        </div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2017         <a href="mailto:aubreymoore@guam.net">Aubrey Moore</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="assets/js/jquery.min.js"></script><script src="assets/js/bootstrap.min.js"></script><script src="assets/js/moment-with-locales.min.js"></script><script src="assets/js/fancydates.js"></script><script src="assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><!-- Modal --><div id="search-results" class="modal fade" role="dialog" style="height: 80%;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Search Results:</h4>
+      </div>
+      <div class="modal-body" id="tipue_search_content" style="max-height: 600px; overflow-y: auto;">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script>
+$(document).ready(function() {
+    $.when(
+        $.getScript( "/assets/js/tipuesearch_set.js" ),
+        $.getScript( "/assets/js/tipuesearch.js" ),
+        $.Deferred(function( deferred ){
+            $( deferred.resolve );
+        })
+    ).done(function() {
+        $('#tipue_search_input').tipuesearch({
+            'mode': 'json',
+            'contentLocation': '/assets/js/tipuesearch_content.json'
+        });
+        $('#tipue_search_input').keyup(function (e) {
+            if (e.keyCode == 13) {
+                $('#search-results').modal()
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>
