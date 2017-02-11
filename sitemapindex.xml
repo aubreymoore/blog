@@ -18,6 +18,10 @@
   <lastmod>2017-02-11T02:08:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://example.com/categories/python-scrapy.xml</loc>
+  <lastmod>2017-02-11T10:13:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://example.com/categories/pythonanywhere.xml</loc>
   <lastmod>2017-02-11T01:46:00Z</lastmod>
  </sitemap>
@@ -35,10 +39,10 @@
  </sitemap>
  <sitemap>
   <loc>https://example.com/rss.xml</loc>
-  <lastmod>2017-02-11T02:08:00Z</lastmod>
+  <lastmod>2017-02-11T10:13:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://example.com/sitemap.xml</loc>
-  <lastmod>2017-02-11T02:08:00Z</lastmod>
+  <lastmod>2017-02-11T10:13:00Z</lastmod>
  </sitemap>
 </sitemapindex>

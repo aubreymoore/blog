@@ -19,11 +19,11 @@
  </url>
  <url>
   <loc>https://example.com/archive.html</loc>
-  <lastmod>2017-02-11T01:51:00Z</lastmod>
+  <lastmod>2017-02-11T10:09:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/categories/</loc>
-  <lastmod>2017-02-11T00:56:00Z</lastmod>
+  <lastmod>2017-02-11T10:13:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/categories/dreamhost/</loc>
@@ -36,6 +36,10 @@
  <url>
   <loc>https://example.com/categories/nikola/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://example.com/categories/python-scrapy/</loc>
+  <lastmod>2017-02-11T10:13:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/categories/pythonanywhere/</loc>
@@ -104,6 +108,10 @@
  <url>
   <loc>https://example.com/posts/test-post/</loc>
   <lastmod>2017-02-11T00:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://example.com/posts/using-scrapy-to-find-a-string-in-a-web-site/</loc>
+  <lastmod>2017-02-11T10:09:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/tipue_search.html</loc>
