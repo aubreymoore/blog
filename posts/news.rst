@@ -1,0 +1,12 @@
+.. title: news
+.. slug: news
+.. date: 2016-10-18 06:17:10 UTC+10:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+
+Write your post here.
+
+This is a test of the search plugin which uses Tipue.
