@@ -10,10 +10,6 @@
   <lastmod>2017-02-10T23:32:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/2012/</loc>
-  <lastmod>2016-10-17T20:17:00Z</lastmod>
- </url>
- <url>
   <loc>https://example.com/2016/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
@@ -23,39 +19,11 @@
  </url>
  <url>
   <loc>https://example.com/archive.html</loc>
-  <lastmod>2017-02-10T23:32:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/authors/</loc>
-  <lastmod>2016-10-17T23:34:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/authors/aubrey-moore/</loc>
-  <lastmod>2016-10-17T23:34:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/authors/nikola-tesla/</loc>
-  <lastmod>2016-10-17T20:17:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/authors/roberto-alsina/</loc>
-  <lastmod>2016-10-17T20:17:00Z</lastmod>
+  <lastmod>2017-02-11T00:09:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/categories/</loc>
-  <lastmod>2017-02-10T23:32:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/categories/blog/</loc>
-  <lastmod>2016-10-17T20:17:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/categories/cat_nikola/</loc>
-  <lastmod>2016-10-17T20:17:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/categories/demo/</loc>
-  <lastmod>2016-10-17T20:17:00Z</lastmod>
+  <lastmod>2017-02-11T00:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/categories/dreamhost/</loc>
@@ -63,10 +31,6 @@
  </url>
  <url>
   <loc>https://example.com/categories/nikola/</loc>
-  <lastmod>2016-10-17T20:17:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/categories/python/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
  <url>
@@ -98,23 +62,7 @@
   <lastmod>2017-02-10T23:22:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/pages/about-nikola/</loc>
-  <lastmod>2016-10-17T20:17:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/pages/bootstrap-demo/</loc>
-  <lastmod>2016-10-17T20:18:00Z</lastmod>
- </url>
- <url>
   <loc>https://example.com/pages/charts/</loc>
-  <lastmod>2016-10-17T20:17:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/pages/creating-a-theme/</loc>
-  <lastmod>2016-10-17T20:18:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/pages/dr-nikolas-vendetta/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
  <url>
@@ -122,15 +70,7 @@
   <lastmod>2016-10-17T20:18:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/pages/handbook/</loc>
-  <lastmod>2016-10-17T20:18:00Z</lastmod>
- </url>
- <url>
   <loc>https://example.com/pages/internals/</loc>
-  <lastmod>2016-10-17T20:17:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/pages/listings-demo/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
  <url>
@@ -138,23 +78,7 @@
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/pages/quickref/</loc>
-  <lastmod>2016-10-17T20:18:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/pages/quickstart/</loc>
-  <lastmod>2016-10-17T20:17:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/pages/slides-demo/</loc>
-  <lastmod>2016-10-17T20:17:00Z</lastmod>
- </url>
- <url>
   <loc>https://example.com/pages/social_buttons/</loc>
-  <lastmod>2016-10-17T20:17:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/pages/theming/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
  <url>
@@ -162,12 +86,12 @@
   <lastmod>2017-02-10T23:32:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/posts/news/</loc>
-  <lastmod>2016-10-17T20:18:00Z</lastmod>
- </url>
- <url>
   <loc>https://example.com/posts/nikola-site-is-on-github/</loc>
   <lastmod>2016-12-29T00:14:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://example.com/posts/publish-nikola-site-on-github/</loc>
+  <lastmod>2017-02-11T00:09:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/posts/taxonomic-notes/</loc>
@@ -175,11 +99,7 @@
  </url>
  <url>
   <loc>https://example.com/posts/test-post/</loc>
-  <lastmod>2016-12-28T21:58:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/posts/welcome-to-nikola/</loc>
-  <lastmod>2016-10-17T20:18:00Z</lastmod>
+  <lastmod>2017-02-11T00:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/tipue_search.html</loc>
