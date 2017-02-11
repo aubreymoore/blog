@@ -8,11 +8,12 @@
 .. description: 
 .. type: text
 -->
-Last updated Sunday, 12. February 2017 07:28AM 
+
+Last updated Sunday, 12. February 2017 07:53AM 
 
 I wanted to find pages on the University of Guam College of Natural and Life Sciences Web Site containing a specific string. This short python script, which uses the [scrapy](https://scrapy.org/) framework, does the trick:
 
-#### test_spider.py
+### test_spider.py
 ~~~python
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.contrib.linkextractors import LinkExtractor
@@ -32,15 +33,18 @@ class someSpider(CrawlSpider):
     return
 ~~~
 
-#### Executed from the command line using:
+### Executed from the command line using:
 ~~~sh
 scrapy runspider test_spider.py -s DEPTH_LIMIT=2
 ~~~
 
-#### Output: test_spider_log.md
+### Output: test_spider_log.md
 **bell pepper** was found in <http://cnas-re.uog.edu/soils-of-guam/>
+
 **bell pepper** was found in <http://cnas-re.uog.edu/cnas-publications/?auth=&limit=17&tgid=&type=&usr=&yr=>
+
 **bell pepper** was found in <http://cnas-re.uog.edu/cnas-publications/?auth=&tgid=115&type=&usr=&yr=>
+
 **bell pepper** was found in <http://cnas-re.uog.edu/cnas-publications/?auth=&tgid=66&type=&usr=&yr=>
 
 
