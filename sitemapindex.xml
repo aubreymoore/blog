@@ -7,38 +7,38 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://example.com/categories/dreamhost.xml</loc>
-  <lastmod>2017-02-10T23:32:00Z</lastmod>
+  <lastmod>2017-02-11T01:46:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://example.com/categories/github-pages.xml</loc>
-  <lastmod>2017-02-11T00:56:00Z</lastmod>
+  <lastmod>2017-02-11T01:43:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://example.com/categories/nikola.xml</loc>
-  <lastmod>2017-02-11T00:56:00Z</lastmod>
+  <lastmod>2017-02-11T01:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://example.com/categories/pythonanywhere.xml</loc>
-  <lastmod>2017-02-10T23:32:00Z</lastmod>
+  <lastmod>2017-02-11T01:46:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://example.com/categories/web2py.xml</loc>
-  <lastmod>2017-02-10T23:32:00Z</lastmod>
+  <lastmod>2017-02-11T01:46:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://example.com/galleries/demo/rss.xml</loc>
-  <lastmod>2017-02-10T23:22:00Z</lastmod>
+  <lastmod>2017-02-11T01:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://example.com/galleries/rss.xml</loc>
-  <lastmod>2017-02-10T23:22:00Z</lastmod>
+  <lastmod>2017-02-11T01:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://example.com/rss.xml</loc>
-  <lastmod>2017-02-11T00:56:00Z</lastmod>
+  <lastmod>2017-02-11T01:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://example.com/sitemap.xml</loc>
-  <lastmod>2017-02-11T00:56:00Z</lastmod>
+  <lastmod>2017-02-11T01:51:00Z</lastmod>
  </sitemap>
 </sitemapindex>

@@ -4,11 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Failed Attempt to Run wep2py on Dreamhost | Aubrey Moore</title>
-<link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
-<link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
-<link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
-<link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="https://example.com/posts/failed-attempt-to-run-wep2py-on-dreamhost/">
@@ -115,37 +111,37 @@ Reference http">
 <ul>
 <li>Reference http://docs.python-guide.org/en/latest/dev/virtualenvs/</li>
 </ul>
-<pre class="code literal-block"><span></span><span class="n">mkdir</span> <span class="n">my_project_folder</span>
-<span class="n">cd</span> <span class="n">my_project_folder</span>
-<span class="n">virtualenv</span> <span class="n">venv</span>
-<span class="n">source</span> <span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="n">requests</span>
-<span class="n">deactivate</span>
+<pre class="code literal-block"><span></span>mkdir my_project_folder
+<span class="nb">cd</span> my_project_folder
+virtualenv venv
+<span class="nb">source</span> venv/bin/activate
+pip install requests
+deactivate
 </pre>
 
 
 <h3>Download web2py</h3>
-<pre class="code literal-block"><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">mdipierro</span><span class="o">.</span><span class="n">pythonanywhere</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">examples</span><span class="o">/</span><span class="n">static</span><span class="o">/</span><span class="n">web2py_src</span><span class="o">.</span><span class="n">zip</span>
-<span class="n">unzip</span> <span class="n">web2py_src</span><span class="o">.</span><span class="n">zip</span>
-<span class="n">rm</span> <span class="n">web2py_src</span><span class="o">.</span><span class="n">zip</span>
+<pre class="code literal-block"><span></span>wget https://mdipierro.pythonanywhere.com/examples/static/web2py_src.zip
+unzip web2py_src.zip
+rm web2py_src.zip
 </pre>
 
 
 <h3>First Attempt</h3>
-<pre class="code literal-block"><span></span><span class="p">(</span><span class="n">venv</span><span class="p">)</span><span class="n">aubreymoore</span><span class="nd">@cactus</span><span class="p">:</span><span class="o">~/</span><span class="n">my_project_folder</span> <span class="err">$</span> <span class="n">cd</span> <span class="n">web2py</span>
-<span class="p">(</span><span class="n">venv</span><span class="p">)</span><span class="n">aubreymoore</span><span class="nd">@cactus</span><span class="p">:</span><span class="o">~/</span><span class="n">my_project_folder</span><span class="o">/</span><span class="n">web2py</span> <span class="err">$</span> <span class="n">ls</span>
-<span class="n">CHANGELOG</span>  <span class="n">LICENSE</span>  <span class="n">MANIFEST</span><span class="o">.</span><span class="ow">in</span>  <span class="n">NEWINSTALL</span>  <span class="n">README</span><span class="o">.</span><span class="n">markdown</span>  <span class="n">VERSION</span>  <span class="n">anyserver</span><span class="o">.</span><span class="n">py</span>  <span class="n">applications</span>  <span class="n">examples</span>  <span class="n">extras</span>  <span class="n">gluon</span>  <span class="n">handlers</span>  <span class="n">scripts</span>  <span class="n">site</span><span class="o">-</span><span class="n">packages</span>  <span class="n">web2py</span><span class="o">.</span><span class="n">py</span>
-<span class="p">(</span><span class="n">venv</span><span class="p">)</span><span class="n">aubreymoore</span><span class="nd">@cactus</span><span class="p">:</span><span class="o">~/</span><span class="n">my_project_folder</span><span class="o">/</span><span class="n">web2py</span> <span class="err">$</span> <span class="n">python</span> <span class="n">web2py</span><span class="o">.</span><span class="n">py</span>
-<span class="n">web2py</span> <span class="n">Web</span> <span class="n">Framework</span>
-<span class="n">Created</span> <span class="n">by</span> <span class="n">Massimo</span> <span class="n">Di</span> <span class="n">Pierro</span><span class="p">,</span> <span class="n">Copyright</span> <span class="mi">2007</span><span class="o">-</span><span class="mi">2017</span>
-<span class="n">Version</span> <span class="mf">2.14</span><span class="o">.</span><span class="mi">6</span><span class="o">-</span><span class="n">stable</span><span class="o">+</span><span class="n">timestamp</span><span class="o">.</span><span class="mf">2016.05</span><span class="o">.</span><span class="mf">10.00</span><span class="o">.</span><span class="mf">21.47</span>
-<span class="n">Database</span> <span class="n">drivers</span> <span class="n">available</span><span class="p">:</span> <span class="n">sqlite3</span><span class="p">,</span> <span class="n">imaplib</span><span class="p">,</span> <span class="n">pyodbc</span><span class="p">,</span> <span class="n">pymysql</span><span class="p">,</span> <span class="n">pg8000</span>
-<span class="n">WARNING</span><span class="p">:</span><span class="n">web2py</span><span class="p">:</span><span class="n">GUI</span> <span class="ow">not</span> <span class="n">available</span> <span class="n">because</span> <span class="n">Tk</span> <span class="n">library</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">installed</span>
-<span class="n">choose</span> <span class="n">a</span> <span class="n">password</span><span class="p">:</span>
+<pre class="code literal-block"><span></span><span class="o">(</span>venv<span class="o">)</span>aubreymoore@cactus:~/my_project_folder $ <span class="nb">cd</span> web2py
+<span class="o">(</span>venv<span class="o">)</span>aubreymoore@cactus:~/my_project_folder/web2py $ ls
+CHANGELOG  LICENSE  MANIFEST.in  NEWINSTALL  README.markdown  VERSION  anyserver.py  applications  examples  extras  gluon  handlers  scripts  site-packages  web2py.py
+<span class="o">(</span>venv<span class="o">)</span>aubreymoore@cactus:~/my_project_folder/web2py $ python web2py.py
+web2py Web Framework
+Created by Massimo Di Pierro, Copyright 2007-2017
+Version 2.14.6-stable+timestamp.2016.05.10.00.21.47
+Database drivers available: sqlite3, imaplib, pyodbc, pymysql, pg8000
+WARNING:web2py:GUI not available because Tk library is not installed
+choose a password:
 
-<span class="n">please</span> <span class="n">visit</span><span class="p">:</span>
-    <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">8000</span><span class="o">/</span>
-<span class="n">use</span> <span class="s2">"kill -SIGTERM 28797"</span> <span class="n">to</span> <span class="n">shutdown</span> <span class="n">the</span> <span class="n">web2py</span> <span class="n">server</span>
+please visit:
+    http://127.0.0.1:8000/
+use <span class="s2">"kill -SIGTERM 28797"</span> to shutdown the web2py server
 </pre>
 
 
@@ -160,8 +156,8 @@ Reference http">
 <ul>
 <li>to clean up, we simply delete my_project_folder</li>
 </ul>
-<pre class="code literal-block"><span></span><span class="n">cd</span> <span class="o">~</span>
-<span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="n">my_project_folder</span>
+<pre class="code literal-block"><span></span><span class="nb">cd</span> ~
+rm -rf my_project_folder
 </pre>
 </div>
     </div>
@@ -189,7 +185,7 @@ Reference http">
 </div>
 
 
-            <script src="../../assets/js/jquery.min.js"></script><script src="../../assets/js/bootstrap.min.js"></script><script src="../../assets/js/moment-with-locales.min.js"></script><script src="../../assets/js/fancydates.js"></script><script src="../../assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+            <script src="../../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
     moment.locale("en");
     fancydates(0, "YYYY-MM-DD HH:mm");
     </script><!-- end fancy dates --><!-- Modal --><div id="search-results" class="modal fade" role="dialog" style="height: 80%;">

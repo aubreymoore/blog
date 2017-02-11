@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>https://example.com/archive.html</loc>
-  <lastmod>2017-02-11T00:09:00Z</lastmod>
+  <lastmod>2017-02-11T01:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/categories/</loc>
@@ -63,7 +63,7 @@
  </url>
  <url>
   <loc>https://example.com/listings/hello.py.html</loc>
-  <lastmod>2017-02-10T23:22:00Z</lastmod>
+  <lastmod>2017-02-11T01:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/pages/charts/</loc>
@@ -104,6 +104,14 @@
  <url>
   <loc>https://example.com/posts/test-post/</loc>
   <lastmod>2017-02-11T00:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://example.com/posts/test/</loc>
+  <lastmod>2017-02-11T01:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://example.com/posts/test2/</loc>
+  <lastmod>2017-02-11T01:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/tipue_search.html</loc>
