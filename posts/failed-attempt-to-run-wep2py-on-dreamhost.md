@@ -18,7 +18,7 @@ Saturday, 11. February 2017 06:37AM
 
 ## Create virtualenv
 * Reference http://docs.python-guide.org/en/latest/dev/virtualenvs/
-~~~python
+~~~sh
 mkdir my_project_folder
 cd my_project_folder
 virtualenv venv
@@ -28,14 +28,14 @@ deactivate
 ~~~
 
 ## Download web2py
-~~~python
+~~~sh
 wget https://mdipierro.pythonanywhere.com/examples/static/web2py_src.zip
 unzip web2py_src.zip
 rm web2py_src.zip
 ~~~
 
 ## First Attempt
-~~~python
+~~~sh
 (venv)aubreymoore@cactus:~/my_project_folder $ cd web2py
 (venv)aubreymoore@cactus:~/my_project_folder/web2py $ ls
 CHANGELOG  LICENSE  MANIFEST.in  NEWINSTALL  README.markdown  VERSION  anyserver.py  applications  examples  extras  gluon  handlers  scripts  site-packages  web2py.py
@@ -59,7 +59,7 @@ use "kill -SIGTERM 28797" to shutdown the web2py server
 ## Seems Overly Complicated - Give Up and Deploy to pythonanywhere
 
 * to clean up, we simply delete my_project_folder
-~~~python
+~~~sh
 cd ~
 rm -rf my_project_folder
 ~~~
