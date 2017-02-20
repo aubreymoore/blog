@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Aubrey Moore</title><link>https://aubreymoore.github.io/blog/</link><description>All things techie.</description><atom:link type="application/rss+xml" href="https://aubreymoore.github.io/blog/rss.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 20 Feb 2017 09:35:18 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tweeking Nikola CSS to Improve Table Display</title><link>https://aubreymoore.github.io/blog/posts/tweeking-nikola-css-to-improve-table-display/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;Crappy default styling of tables was fixed by adding this file:&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Aubrey Moore</title><link>https://aubreymoore.github.io/blog/</link><description>All things techie.</description><atom:link href="https://aubreymoore.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 20 Feb 2017 09:39:38 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tweeking Nikola CSS to Improve Table Display</title><link>https://aubreymoore.github.io/blog/posts/tweeking-nikola-css-to-improve-table-display/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;Crappy default styling of tables was fixed by adding this file:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;~nik/mysite/files/assets/css/custom.css&lt;/strong&gt; **&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;/* Tweeks by Aubrey Moore */&lt;/span&gt;
 
@@ -16,7 +16,7 @@
 &lt;/pre&gt;&lt;/div&gt;</description><category>css</category><category>Nikola</category><guid>https://aubreymoore.github.io/blog/posts/tweeking-nikola-css-to-improve-table-display/</guid><pubDate>Mon, 20 Feb 2017 09:28:56 GMT</pubDate></item><item><title>USDA Farm Bill Funding for Coconut Rhinoceros Beetle Projects in Guam and Hawaii</title><link>https://aubreymoore.github.io/blog/posts/usda-farm-bill-funding-for-coconut-rhinoceros-beetle-projects-in-guam-and-hawaii/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;Fiscal year&lt;/th&gt;
+&lt;th&gt;Fiscal year&lt;sup&gt;*&lt;/sup&gt;&lt;/th&gt;
 &lt;th align="right"&gt;Guam&lt;/th&gt;
 &lt;th align="right"&gt;Hawaii&lt;/th&gt;
 &lt;/tr&gt;
@@ -49,7 +49,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Click on fiscal year for details.&lt;/p&gt;&lt;/div&gt;</description><guid>https://aubreymoore.github.io/blog/posts/usda-farm-bill-funding-for-coconut-rhinoceros-beetle-projects-in-guam-and-hawaii/</guid><pubDate>Mon, 20 Feb 2017 07:08:40 GMT</pubDate></item><item><title>Using Scrapy to Find a String in a Web Site</title><link>https://aubreymoore.github.io/blog/posts/using-scrapy-to-find-a-string-in-a-web-site/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;Last updated Sunday, 12. February 2017 07:53AM &lt;/p&gt;
+&lt;p&gt;&lt;sup&gt;*&lt;/sup&gt;Click on fiscal year for details.&lt;/p&gt;&lt;/div&gt;</description><guid>https://aubreymoore.github.io/blog/posts/usda-farm-bill-funding-for-coconut-rhinoceros-beetle-projects-in-guam-and-hawaii/</guid><pubDate>Mon, 20 Feb 2017 07:08:40 GMT</pubDate></item><item><title>Using Scrapy to Find a String in a Web Site</title><link>https://aubreymoore.github.io/blog/posts/using-scrapy-to-find-a-string-in-a-web-site/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;Last updated Sunday, 12. February 2017 07:53AM &lt;/p&gt;
 &lt;p&gt;I wanted to find pages on the University of Guam College of Natural and Life Sciences Web Site containing a specific string. This short python script, which uses the &lt;a href="https://scrapy.org/"&gt;scrapy&lt;/a&gt; framework, does the trick:&lt;/p&gt;
 &lt;h4&gt;test_spider.py&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;scrapy.spiders&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;CrawlSpider&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Rule&lt;/span&gt;
