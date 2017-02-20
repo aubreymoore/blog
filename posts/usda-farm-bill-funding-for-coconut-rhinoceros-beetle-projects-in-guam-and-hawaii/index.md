@@ -9,8 +9,8 @@
 .. type: text
 -->
 
-| Fiscal year | Guam | Hawaii |
-| ----------- | ---- | ------ |
+| Fiscal year |      Guam      |                  Hawaii |
+| ----------- | ----: | ------: |
 | [2014](http://www.aphis.usda.gov/newsroom/2014/04/pdf/fy14_farm_bill_spending_plan.pdf) | $180,000 | $2,448,000 |
 | [2015](http://www.aphis.usda.gov/plant_health/farmbill-section10007/fy15/FY15-FarmBill10007-PlantPlestandDisease-Spending-Plan.pdf) | $179,844 | $2,200,000 |
 | [2016](https://www.aphis.usda.gov/plant_health/farmbill-section10007/fy16/Plant-Pest-Disease-FB-Spending-Plan-FY16.pdf) | $250,000 | $1,399,384 |

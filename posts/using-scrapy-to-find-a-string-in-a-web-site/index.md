@@ -49,8 +49,3 @@ scrapy runspider test_spider.py -s DEPTH_LIMIT=2
 
 
 ___
-
-asas
-asasa
-
-___

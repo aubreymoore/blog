@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Aubrey Moore</title><link>https://example.com/</link><description>This is a demo site for Nikola.</description><atom:link href="https://example.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 20 Feb 2017 08:03:45 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>USDA Farm Bill Funding for Coconut Rhinoceros Beetle Projects in Guam and Hawaii</title><link>https://example.com/posts/usda-farm-bill-funding-for-coconut-rhinoceros-beetle-projects-in-guam-and-hawaii/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;table&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Aubrey Moore</title><link>https://aubreymoore.github.io/blog/</link><description>All things techie.</description><atom:link rel="self" type="application/rss+xml" href="https://aubreymoore.github.io/blog/rss.xml"></atom:link><language>en</language><lastBuildDate>Mon, 20 Feb 2017 09:23:00 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>USDA Farm Bill Funding for Coconut Rhinoceros Beetle Projects in Guam and Hawaii</title><link>https://aubreymoore.github.io/blog/posts/usda-farm-bill-funding-for-coconut-rhinoceros-beetle-projects-in-guam-and-hawaii/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Fiscal year&lt;/th&gt;
-&lt;th&gt;Guam&lt;/th&gt;
-&lt;th&gt;Hawaii&lt;/th&gt;
+&lt;th align="right"&gt;Guam&lt;/th&gt;
+&lt;th align="right"&gt;Hawaii&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a href="http://www.aphis.usda.gov/newsroom/2014/04/pdf/fy14_farm_bill_spending_plan.pdf"&gt;2014&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;$180,000&lt;/td&gt;
-&lt;td&gt;$2,448,000&lt;/td&gt;
+&lt;td align="right"&gt;$180,000&lt;/td&gt;
+&lt;td align="right"&gt;$2,448,000&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a href="http://www.aphis.usda.gov/plant_health/farmbill-section10007/fy15/FY15-FarmBill10007-PlantPlestandDisease-Spending-Plan.pdf"&gt;2015&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;$179,844&lt;/td&gt;
-&lt;td&gt;$2,200,000&lt;/td&gt;
+&lt;td align="right"&gt;$179,844&lt;/td&gt;
+&lt;td align="right"&gt;$2,200,000&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a href="https://www.aphis.usda.gov/plant_health/farmbill-section10007/fy16/Plant-Pest-Disease-FB-Spending-Plan-FY16.pdf"&gt;2016&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;$250,000&lt;/td&gt;
-&lt;td&gt;$1,399,384&lt;/td&gt;
+&lt;td align="right"&gt;$250,000&lt;/td&gt;
+&lt;td align="right"&gt;$1,399,384&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a href="https://www.aphis.usda.gov/plant_health/farmbill-section10007/fy17/FY2017-PPDMDPP-Spending-Plan.pdf"&gt;2017&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;$475,000&lt;/td&gt;
-&lt;td&gt;$1,225,000&lt;/td&gt;
+&lt;td align="right"&gt;$475,000&lt;/td&gt;
+&lt;td align="right"&gt;$1,225,000&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;$1,084,844&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;$7,272,384&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="right"&gt;&lt;strong&gt;$1,084,844&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="right"&gt;&lt;strong&gt;$7,272,384&lt;/strong&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Click on fiscal year for details.&lt;/p&gt;&lt;/div&gt;</description><guid>https://example.com/posts/usda-farm-bill-funding-for-coconut-rhinoceros-beetle-projects-in-guam-and-hawaii/</guid><pubDate>Mon, 20 Feb 2017 07:08:40 GMT</pubDate></item><item><title>Using Scrapy to Find a String in a Web Site</title><link>https://example.com/posts/using-scrapy-to-find-a-string-in-a-web-site/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;Last updated Sunday, 12. February 2017 07:53AM &lt;/p&gt;
+&lt;p&gt;Click on fiscal year for details.&lt;/p&gt;&lt;/div&gt;</description><guid>https://aubreymoore.github.io/blog/posts/usda-farm-bill-funding-for-coconut-rhinoceros-beetle-projects-in-guam-and-hawaii/</guid><pubDate>Mon, 20 Feb 2017 07:08:40 GMT</pubDate></item><item><title>Using Scrapy to Find a String in a Web Site</title><link>https://aubreymoore.github.io/blog/posts/using-scrapy-to-find-a-string-in-a-web-site/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;Last updated Sunday, 12. February 2017 07:53AM &lt;/p&gt;
 &lt;p&gt;I wanted to find pages on the University of Guam College of Natural and Life Sciences Web Site containing a specific string. This short python script, which uses the &lt;a href="https://scrapy.org/"&gt;scrapy&lt;/a&gt; framework, does the trick:&lt;/p&gt;
 &lt;h4&gt;test_spider.py&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;scrapy.spiders&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;CrawlSpider&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Rule&lt;/span&gt;
@@ -67,10 +67,7 @@
 &lt;p&gt;&lt;strong&gt;bell pepper&lt;/strong&gt; was found in &lt;a href="http://cnas-re.uog.edu/cnas-publications/?auth=&amp;amp;limit=17&amp;amp;tgid=&amp;amp;type=&amp;amp;usr=&amp;amp;yr="&gt;http://cnas-re.uog.edu/cnas-publications/?auth=&amp;amp;limit=17&amp;amp;tgid=&amp;amp;type=&amp;amp;usr=&amp;amp;yr=&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;bell pepper&lt;/strong&gt; was found in &lt;a href="http://cnas-re.uog.edu/cnas-publications/?auth=&amp;amp;tgid=115&amp;amp;type=&amp;amp;usr=&amp;amp;yr="&gt;http://cnas-re.uog.edu/cnas-publications/?auth=&amp;amp;tgid=115&amp;amp;type=&amp;amp;usr=&amp;amp;yr=&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;bell pepper&lt;/strong&gt; was found in &lt;a href="http://cnas-re.uog.edu/cnas-publications/?auth=&amp;amp;tgid=66&amp;amp;type=&amp;amp;usr=&amp;amp;yr="&gt;http://cnas-re.uog.edu/cnas-publications/?auth=&amp;amp;tgid=66&amp;amp;type=&amp;amp;usr=&amp;amp;yr=&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;asas
-asasa&lt;/p&gt;
-&lt;hr&gt;&lt;/div&gt;</description><category>python scrapy</category><guid>https://example.com/posts/using-scrapy-to-find-a-string-in-a-web-site/</guid><pubDate>Sat, 11 Feb 2017 09:57:33 GMT</pubDate></item><item><title>Publish Nikola Site on GitHub</title><link>https://example.com/posts/publish-nikola-site-on-github/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;Publishing my Nikola site on &lt;strong&gt;github pages&lt;/strong&gt; was remarkably easy.&lt;/p&gt;
+&lt;hr&gt;&lt;/div&gt;</description><category>python scrapy</category><guid>https://aubreymoore.github.io/blog/posts/using-scrapy-to-find-a-string-in-a-web-site/</guid><pubDate>Sat, 11 Feb 2017 09:57:33 GMT</pubDate></item><item><title>Publish Nikola Site on GitHub</title><link>https://aubreymoore.github.io/blog/posts/publish-nikola-site-on-github/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;Publishing my Nikola site on &lt;strong&gt;github pages&lt;/strong&gt; was remarkably easy.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Instructions are found in the Nikola Handbook here: &lt;a href="https://getnikola.com/handbook.html#deploying-to-github"&gt;https://getnikola.com/handbook.html#deploying-to-github&lt;/a&gt;&lt;/p&gt;
@@ -94,7 +91,7 @@ git remote add origin git@github.com:aubreymoore/blog.git
 &lt;li&gt;Pushed my site to github from the command line:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;nikola github_deploy
-&lt;/pre&gt;&lt;/div&gt;</description><category>github pages</category><category>Nikola</category><guid>https://example.com/posts/publish-nikola-site-on-github/</guid><pubDate>Sat, 11 Feb 2017 00:09:34 GMT</pubDate></item><item><title>Failed Attempt to Run wep2py on Dreamhost</title><link>https://example.com/posts/failed-attempt-to-run-wep2py-on-dreamhost/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;h2&gt;Failed Attempt to Run wep2py on Dreamhost&lt;/h2&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>github pages</category><category>Nikola</category><guid>https://aubreymoore.github.io/blog/posts/publish-nikola-site-on-github/</guid><pubDate>Sat, 11 Feb 2017 00:09:34 GMT</pubDate></item><item><title>Failed Attempt to Run wep2py on Dreamhost</title><link>https://aubreymoore.github.io/blog/posts/failed-attempt-to-run-wep2py-on-dreamhost/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;h2&gt;Failed Attempt to Run wep2py on Dreamhost&lt;/h2&gt;
 &lt;p&gt;Saturday, 11. February 2017 06:37AM &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;SSH to DreamHost shared hosting.&lt;/li&gt;
@@ -152,8 +149,8 @@ use &lt;span class="s2"&gt;"kill -SIGTERM 28797"&lt;/span&gt; to shutdown the we
 &lt;/ul&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~
 rm -rf my_project_folder
-&lt;/pre&gt;&lt;/div&gt;</description><category>DreamHost</category><category>PythonAnywhere</category><category>web2py</category><guid>https://example.com/posts/failed-attempt-to-run-wep2py-on-dreamhost/</guid><pubDate>Fri, 10 Feb 2017 23:28:41 GMT</pubDate></item><item><title>Nikola Site is on GitHub</title><link>https://example.com/posts/nikola-site-is-on-github/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="https://github.com/getnikola/nikola-site"&gt;Here it is.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Need to go to work now.&lt;/p&gt;&lt;/div&gt;</description><category>Nikola</category><guid>https://example.com/posts/nikola-site-is-on-github/</guid><pubDate>Thu, 29 Dec 2016 00:14:01 GMT</pubDate></item><item><title>Taxonomic Notes</title><link>https://example.com/posts/taxonomic-notes/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;h4&gt;Recording Synonyms&lt;/h4&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>DreamHost</category><category>PythonAnywhere</category><category>web2py</category><guid>https://aubreymoore.github.io/blog/posts/failed-attempt-to-run-wep2py-on-dreamhost/</guid><pubDate>Fri, 10 Feb 2017 23:28:41 GMT</pubDate></item><item><title>Nikola Site is on GitHub</title><link>https://aubreymoore.github.io/blog/posts/nikola-site-is-on-github/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="https://github.com/getnikola/nikola-site"&gt;Here it is.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Need to go to work now.&lt;/p&gt;&lt;/div&gt;</description><category>Nikola</category><guid>https://aubreymoore.github.io/blog/posts/nikola-site-is-on-github/</guid><pubDate>Thu, 29 Dec 2016 00:14:01 GMT</pubDate></item><item><title>Taxonomic Notes</title><link>https://aubreymoore.github.io/blog/posts/taxonomic-notes/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;h4&gt;Recording Synonyms&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;According to &lt;a href="http://www.gbif.org/system/files_force/gbif_resource/resource-80642/gbif_gna_profile_reference_guide.pdf?download=1"&gt;GBIF GNA Profile Reference Guide for Darwin Core Archive, Core Terms and Extensions&lt;/a&gt;: "Synonyms occupy separate lines and therefore also have unique taxonIDs."&lt;/p&gt;
@@ -164,5 +161,5 @@ rm -rf my_project_folder
 &lt;li&gt;
 &lt;p&gt;Several references indicate that misspellings should be noted in &lt;strong&gt;dwc:taxonRemarks&lt;/strong&gt;. Example: "this name is a misspelling in common use"&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><guid>https://example.com/posts/taxonomic-notes/</guid><pubDate>Wed, 28 Dec 2016 22:43:00 GMT</pubDate></item><item><title>Configuring Nikola and Adding Full Text Search</title><link>https://example.com/posts/test-post/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;This &lt;a href="http://simonvanderveldt.nl/configuring-nikola/"&gt;post&lt;/a&gt; was helpful in learning how to configure Nikola.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://ralsina.me/weblog/posts/standalone-search-in-nikola.html#id2"&gt;Here's a post that shows how to add full text search to a Nikola site.&lt;/a&gt; &lt;/p&gt;&lt;/div&gt;</description><category>Nikola</category><guid>https://example.com/posts/test-post/</guid><pubDate>Wed, 28 Dec 2016 21:43:54 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;&lt;/div&gt;</description><guid>https://aubreymoore.github.io/blog/posts/taxonomic-notes/</guid><pubDate>Wed, 28 Dec 2016 22:43:00 GMT</pubDate></item><item><title>Configuring Nikola and Adding Full Text Search</title><link>https://aubreymoore.github.io/blog/posts/test-post/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;This &lt;a href="http://simonvanderveldt.nl/configuring-nikola/"&gt;post&lt;/a&gt; was helpful in learning how to configure Nikola.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ralsina.me/weblog/posts/standalone-search-in-nikola.html#id2"&gt;Here's a post that shows how to add full text search to a Nikola site.&lt;/a&gt; &lt;/p&gt;&lt;/div&gt;</description><category>Nikola</category><guid>https://aubreymoore.github.io/blog/posts/test-post/</guid><pubDate>Wed, 28 Dec 2016 21:43:54 GMT</pubDate></item></channel></rss>

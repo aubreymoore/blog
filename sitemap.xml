@@ -6,119 +6,119 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>https://example.com/</loc>
+  <loc>https://aubreymoore.github.io/blog/</loc>
   <lastmod>2017-02-10T23:32:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/2016/</loc>
+  <loc>https://aubreymoore.github.io/blog/2016/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/2017/</loc>
+  <loc>https://aubreymoore.github.io/blog/2017/</loc>
   <lastmod>2017-02-10T23:32:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/archive.html</loc>
-  <lastmod>2017-02-20T07:11:00Z</lastmod>
+  <loc>https://aubreymoore.github.io/blog/archive.html</loc>
+  <lastmod>2017-02-20T09:23:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/categories/</loc>
+  <loc>https://aubreymoore.github.io/blog/categories/</loc>
   <lastmod>2017-02-11T10:13:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/categories/dreamhost/</loc>
+  <loc>https://aubreymoore.github.io/blog/categories/dreamhost/</loc>
   <lastmod>2017-02-10T23:32:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/categories/github-pages/</loc>
+  <loc>https://aubreymoore.github.io/blog/categories/github-pages/</loc>
   <lastmod>2017-02-11T00:56:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/categories/nikola/</loc>
+  <loc>https://aubreymoore.github.io/blog/categories/nikola/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/categories/python-scrapy/</loc>
+  <loc>https://aubreymoore.github.io/blog/categories/python-scrapy/</loc>
   <lastmod>2017-02-11T10:13:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/categories/pythonanywhere/</loc>
+  <loc>https://aubreymoore.github.io/blog/categories/pythonanywhere/</loc>
   <lastmod>2017-02-10T23:32:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/categories/web2py/</loc>
+  <loc>https://aubreymoore.github.io/blog/categories/web2py/</loc>
   <lastmod>2017-02-10T23:32:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/galleries/</loc>
+  <loc>https://aubreymoore.github.io/blog/galleries/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/galleries/demo/</loc>
+  <loc>https://aubreymoore.github.io/blog/galleries/demo/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/listings/</loc>
+  <loc>https://aubreymoore.github.io/blog/listings/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/listings/__pycache__/</loc>
+  <loc>https://aubreymoore.github.io/blog/listings/__pycache__/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/listings/hello.py.html</loc>
-  <lastmod>2017-02-11T01:27:00Z</lastmod>
+  <loc>https://aubreymoore.github.io/blog/listings/hello.py.html</loc>
+  <lastmod>2017-02-20T09:23:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/pages/charts/</loc>
+  <loc>https://aubreymoore.github.io/blog/pages/charts/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/pages/extending/</loc>
+  <loc>https://aubreymoore.github.io/blog/pages/extending/</loc>
   <lastmod>2016-10-17T20:18:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/pages/internals/</loc>
+  <loc>https://aubreymoore.github.io/blog/pages/internals/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/pages/path-handlers/</loc>
+  <loc>https://aubreymoore.github.io/blog/pages/path-handlers/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/pages/social_buttons/</loc>
+  <loc>https://aubreymoore.github.io/blog/pages/social_buttons/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/posts/failed-attempt-to-run-wep2py-on-dreamhost/</loc>
+  <loc>https://aubreymoore.github.io/blog/posts/failed-attempt-to-run-wep2py-on-dreamhost/</loc>
   <lastmod>2017-02-10T23:32:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/posts/nikola-site-is-on-github/</loc>
+  <loc>https://aubreymoore.github.io/blog/posts/nikola-site-is-on-github/</loc>
   <lastmod>2016-12-29T00:14:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/posts/publish-nikola-site-on-github/</loc>
+  <loc>https://aubreymoore.github.io/blog/posts/publish-nikola-site-on-github/</loc>
   <lastmod>2017-02-11T00:09:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/posts/taxonomic-notes/</loc>
+  <loc>https://aubreymoore.github.io/blog/posts/taxonomic-notes/</loc>
   <lastmod>2016-12-28T22:44:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/posts/test-post/</loc>
+  <loc>https://aubreymoore.github.io/blog/posts/test-post/</loc>
   <lastmod>2017-02-11T00:05:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/posts/usda-farm-bill-funding-for-coconut-rhinoceros-beetle-projects-in-guam-and-hawaii/</loc>
+  <loc>https://aubreymoore.github.io/blog/posts/usda-farm-bill-funding-for-coconut-rhinoceros-beetle-projects-in-guam-and-hawaii/</loc>
   <lastmod>2017-02-20T07:11:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/posts/using-scrapy-to-find-a-string-in-a-web-site/</loc>
+  <loc>https://aubreymoore.github.io/blog/posts/using-scrapy-to-find-a-string-in-a-web-site/</loc>
   <lastmod>2017-02-11T10:09:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/tipue_search.html</loc>
+  <loc>https://aubreymoore.github.io/blog/tipue_search.html</loc>
   <lastmod>2016-10-17T22:12:00Z</lastmod>
  </url>
 </urlset>

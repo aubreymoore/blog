@@ -658,3 +658,16 @@ article.post-micro {
         display: none;
     }
 }
+
+/* Tweeks by Aubrey Moore */
+
+td {
+	padding: 15px;
+}
+
+th {
+	text-align: center;
+	padding: 15px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
