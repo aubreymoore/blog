@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>https://example.com/archive.html</loc>
-  <lastmod>2017-02-11T10:09:00Z</lastmod>
+  <lastmod>2017-02-20T07:11:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/categories/</loc>
@@ -108,6 +108,10 @@
  <url>
   <loc>https://example.com/posts/test-post/</loc>
   <lastmod>2017-02-11T00:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://example.com/posts/usda-farm-bill-funding-for-coconut-rhinoceros-beetle-projects-in-guam-and-hawaii/</loc>
+  <lastmod>2017-02-20T07:11:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/posts/using-scrapy-to-find-a-string-in-a-web-site/</loc>
