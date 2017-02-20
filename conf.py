@@ -21,12 +21,12 @@ BLOG_AUTHOR = "Aubrey Moore"  # (translatable)
 BLOG_TITLE = "Aubrey Moore"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://example.com/"
+SITE_URL = "https://aubreymoore.github.io/blog/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://example.com/"
 BLOG_EMAIL = "aubreymoore@guam.net"
-BLOG_DESCRIPTION = "This is a demo site for Nikola."  # (translatable)
+BLOG_DESCRIPTION = "All things techie."  # (translatable)
 
 # Nikola is multilingual!
 #
