@@ -1,5 +1,5 @@
 <!-- 
-.. title: Play Pen
+.. title: Install web2py in a Conda Virtual Environment
 .. slug: play-pen
 .. date: 2017-02-21 13:01:06 UTC+10:00
 .. tags: web2py, virtualenv, python, Anaconda
