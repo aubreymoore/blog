@@ -6,6 +6,10 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://aubreymoore.github.io/blog/categories/anaconda.xml</loc>
+  <lastmod>2017-02-21T06:38:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://aubreymoore.github.io/blog/categories/css.xml</loc>
   <lastmod>2017-02-20T09:35:00Z</lastmod>
  </sitemap>
@@ -26,12 +30,20 @@
   <lastmod>2017-02-20T09:23:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://aubreymoore.github.io/blog/categories/python.xml</loc>
+  <lastmod>2017-02-21T06:38:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://aubreymoore.github.io/blog/categories/pythonanywhere.xml</loc>
   <lastmod>2017-02-20T09:23:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://aubreymoore.github.io/blog/categories/virtualenv.xml</loc>
+  <lastmod>2017-02-21T06:38:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://aubreymoore.github.io/blog/categories/web2py.xml</loc>
-  <lastmod>2017-02-20T09:23:00Z</lastmod>
+  <lastmod>2017-02-21T06:38:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://aubreymoore.github.io/blog/galleries/demo/rss.xml</loc>
@@ -43,10 +55,10 @@
  </sitemap>
  <sitemap>
   <loc>https://aubreymoore.github.io/blog/rss.xml</loc>
-  <lastmod>2017-02-20T09:35:00Z</lastmod>
+  <lastmod>2017-02-21T06:38:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://aubreymoore.github.io/blog/sitemap.xml</loc>
-  <lastmod>2017-02-20T09:35:00Z</lastmod>
+  <lastmod>2017-02-21T06:38:00Z</lastmod>
  </sitemap>
 </sitemapindex>

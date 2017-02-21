@@ -10,7 +10,7 @@
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://aubreymoore.github.io/blog/">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="assets/css/tipuesearch.css">
-<link rel="prefetch" href="posts/tweeking-nikola-css-to-improve-table-display/" type="text/html">
+<link rel="prefetch" href="posts/play-pen/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -63,7 +63,57 @@
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/tweeking-nikola-css-to-improve-table-display/" class="u-url">Tweeking Nikola CSS to Improve Table Display</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/play-pen/" class="u-url">Play Pen</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Aubrey Moore
+            </span></p>
+            <p class="dateline"><a href="posts/play-pen/" rel="bookmark"><time class="published dt-published" datetime="2017-02-21T13:01:06+10:00" title="2017-02-21 13:01">2017-02-21 13:01</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Here's how to get <strong>web2py</strong> installed in a virtual environment using <strong>conda</strong> instead of <strong>virtualenv</strong>.</p>
+<p>Info on <strong>conda environments</strong> is available here: 
+https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/</p>
+<h3>Step 1. Create a directory for our web2py project.</h3>
+<pre class="code literal-block"><span></span><span class="nb">cd</span> Devel
+mkdir playpen
+<span class="nb">cd</span> playpen
+</pre>
+
+
+<h3>Step 2. Create a virtual environment and activate it.</h3>
+<p>Note that <strong>web2py</strong> runs under python 2, not python 3.</p>
+<pre class="code literal-block"><span></span>conda create -n playpen <span class="nv">python</span><span class="o">=</span>2.7
+<span class="nb">source</span> activate playpen
+</pre>
+
+
+<h3>Step 3. Download and install web2py.</h3>
+<pre class="code literal-block"><span></span>wget https://mdipierro.pythonanywhere.com/examples/static/web2py_src.zip
+unzip web2py_src.zip
+rm web2py_src.zip
+</pre>
+
+
+<h3>Step 3. Install pygraphwiz (used to visualize models).</h3>
+<pre class="code literal-block"><span></span>pip install pygraphviz
+</pre>
+
+
+<h3>Step 4. At the end of a session, the virtual environment can be deactivated.</h3>
+<pre class="code literal-block"><span></span><span class="nb">source</span> deactivate playpen
+</pre>
+
+
+<h3>Step 5. To undo everything:</h3>
+<pre class="code literal-block"><span></span>conda remove -n playpen --all
+<span class="nb">cd</span> ..
+rm -rf playpen
+</pre>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/tweeking-nikola-css-to-improve-table-display/" class="u-url">Tweeking Nikola CSS to Improve Table Display</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Aubrey Moore
