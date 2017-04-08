@@ -38,10 +38,4 @@ WU assigned **KYIGO4** as the weather station ID.
 ## Step 4: Access Weather Station Online
 
 The weather station is online at:
-
-<object width="290" height="130"><param name="movie" value="http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=KYIGO4&freq=&units=english&lang=EN" /><embed src="http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=KYIGO4&freq=&units=english&lang=EN" type="application/x-shockwave-flash" width="290" height="130" /></object>
-
-
-
-WU station id: KYIGO4
-WU station key/password: axiiokkv
+https://www.wunderground.com/personal-weather-station/dashboard?ID=KYIGO4
