@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>Aubrey Moore (python)</title><link>https://aubreymoore.github.io/blog/</link><description></description><atom:link type="application/rss+xml" rel="self" href="https://aubreymoore.github.io/blog/categories/python.xml"></atom:link><language>en</language><lastBuildDate>Tue, 21 Feb 2017 06:42:39 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Install web2py in a Conda Virtual Environment</title><link>https://aubreymoore.github.io/blog/posts/play-pen/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;Here's how to get &lt;strong&gt;web2py&lt;/strong&gt; installed in a virtual environment using &lt;strong&gt;conda&lt;/strong&gt; instead of &lt;strong&gt;virtualenv&lt;/strong&gt;.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Aubrey Moore (python)</title><link>https://aubreymoore.github.io/blog/</link><description></description><atom:link rel="self" type="application/rss+xml" href="https://aubreymoore.github.io/blog/categories/python.xml"></atom:link><language>en</language><lastBuildDate>Wed, 15 Mar 2017 11:58:42 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Install web2py in a Conda Virtual Environment</title><link>https://aubreymoore.github.io/blog/posts/play-pen/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;Here's how to get &lt;strong&gt;web2py&lt;/strong&gt; installed in a virtual environment using &lt;strong&gt;conda&lt;/strong&gt; instead of &lt;strong&gt;virtualenv&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Info on &lt;strong&gt;conda environments&lt;/strong&gt; is available here: 
 https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/&lt;/p&gt;
 &lt;h3&gt;Step 1. Create a directory for our web2py project.&lt;/h3&gt;
@@ -28,12 +28,22 @@ rm web2py_src.zip
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Step 4. At the end of a session, the virtual environment can be deactivated.&lt;/h3&gt;
+&lt;h3&gt;Step 4 -- Open web2py in a browser&lt;/h3&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;playpen&lt;span class="o"&gt;)&lt;/span&gt; aubreymoore@aubreymoore-Aspire-7750Z:~/Devel/playpen/web2py$ python web2py.py
+&lt;/pre&gt;
+
+
+&lt;h3&gt;Step 5 -- Open web2py in a python shell&lt;/h3&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;(playpen) aubreymoore@aubreymoore-Aspire-7750Z:~/Devel/playpen/web2py$ python web2py.py -S pestlist/default -M
+&lt;/pre&gt;
+
+
+&lt;h3&gt;Step 6. At the end of a session, the virtual environment can be deactivated.&lt;/h3&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;source&lt;/span&gt; deactivate playpen
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Step 5. To undo everything:&lt;/h3&gt;
+&lt;h3&gt;Step 7. To undo everything:&lt;/h3&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;conda remove -n playpen --all
 &lt;span class="nb"&gt;cd&lt;/span&gt; ..
 rm -rf playpen

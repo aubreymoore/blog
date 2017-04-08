@@ -10,7 +10,7 @@
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://aubreymoore.github.io/blog/">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="assets/css/tipuesearch.css">
-<link rel="prefetch" href="posts/play-pen/" type="text/html">
+<link rel="prefetch" href="posts/setting-up-an-online-weather-station/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -63,7 +63,41 @@
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/play-pen/" class="u-url">Install web2py in a Conda Virtual Environment</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/setting-up-an-online-weather-station/" class="u-url">Setting Up an Online Weather Station</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Aubrey Moore
+            </span></p>
+            <p class="dateline"><a href="posts/setting-up-an-online-weather-station/" rel="bookmark"><time class="published dt-published" datetime="2017-04-09T02:43:59+10:00" title="2017-04-09 02:43">2017-04-09 02:43</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<h2>Weather Station Setup</h2>
+<p>Was asked to set up an on-line weather station for the University of Guam's Agricutural Experiment Station at Yigo, Guam. The weather station is a Davis Vantage Pro 2 on a mast mounted on the roof of a 40 foot shipping container. The container is equipped with internet access via a wireless modem. Data is fetched from the weather instruments using a Davis Vantage Pro 2 console fitted with an optional data logger.</p>
+<p>Decided to use a Raspberry Pi 3 to read data from the weather station console via USB. Data is stored using weewx software, which also takes care of sending it to Weather Underground.</p>
+<h3>Step 1: Install weewx on RP</h3>
+<h3>Step 2: Remove the Fake Clock on the RP</h3>
+<p>Following the suggestion in
+https://github.com/weewx/weewx/wiki/Raspberry-Pi,
+I deleted the fake hardware clock from the RP:</p>
+<pre class="code literal-block"><span></span>$ sudo apt-get purge fake-hwclock
+</pre>
+
+
+<p>This forces <strong>weewx</strong> to wait until a software clock is set from the internet connection before resuming after a power outage.</p>
+<h3>Step 3: Create a Weather Underground Personal Weather Station and Configure weewx to Feed It</h3>
+<p>Followed these directions:
+https://publiclab.org/notes/amysoyka/06-20-2014/how-to-set-up-your-weather-station-and-stream-it-to-the-internet</p>
+<p>WU assigned <strong>KYIGO4</strong> as the weather station ID.</p>
+<h3>Step 4: Access Weather Station Online</h3>
+<p>The weather station is online at:</p>
+<p><object width="290" height="130"><param name="movie" value="http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=KYIGO4&amp;freq=&amp;units=english&amp;lang=EN">
+<embed src="http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=KYIGO4&amp;freq=&amp;units=english&amp;lang=EN" type="application/x-shockwave-flash" width="290" height="130"></embed></object></p>
+<p>WU station id: KYIGO4
+WU station key/password: axiiokkv</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/play-pen/" class="u-url">Install web2py in a Conda Virtual Environment</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Aubrey Moore
@@ -101,12 +135,22 @@ rm web2py_src.zip
 </pre>
 
 
-<h3>Step 4. At the end of a session, the virtual environment can be deactivated.</h3>
+<h3>Step 4 -- Open web2py in a browser</h3>
+<pre class="code literal-block"><span></span><span class="o">(</span>playpen<span class="o">)</span> aubreymoore@aubreymoore-Aspire-7750Z:~/Devel/playpen/web2py$ python web2py.py
+</pre>
+
+
+<h3>Step 5 -- Open web2py in a python shell</h3>
+<pre class="code literal-block"><span></span>(playpen) aubreymoore@aubreymoore-Aspire-7750Z:~/Devel/playpen/web2py$ python web2py.py -S pestlist/default -M
+</pre>
+
+
+<h3>Step 6. At the end of a session, the virtual environment can be deactivated.</h3>
 <pre class="code literal-block"><span></span><span class="nb">source</span> deactivate playpen
 </pre>
 
 
-<h3>Step 5. To undo everything:</h3>
+<h3>Step 7. To undo everything:</h3>
 <pre class="code literal-block"><span></span>conda remove -n playpen --all
 <span class="nb">cd</span> ..
 rm -rf playpen

@@ -19,11 +19,11 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/archive.html</loc>
-  <lastmod>2017-02-21T06:38:00Z</lastmod>
+  <lastmod>2017-04-08T16:44:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/</loc>
-  <lastmod>2017-02-21T06:38:00Z</lastmod>
+  <lastmod>2017-04-08T17:21:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/anaconda/</loc>
@@ -56,6 +56,10 @@
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/pythonanywhere/</loc>
   <lastmod>2017-02-10T23:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/categories/raspberry-pi/</loc>
+  <lastmod>2017-04-08T17:21:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/virtualenv/</loc>
@@ -120,6 +124,10 @@
  <url>
   <loc>https://aubreymoore.github.io/blog/posts/publish-nikola-site-on-github/</loc>
   <lastmod>2017-02-11T00:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/posts/setting-up-an-online-weather-station/</loc>
+  <lastmod>2017-04-08T16:44:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/posts/taxonomic-notes/</loc>
