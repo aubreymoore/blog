@@ -40,12 +40,22 @@ rm web2py_src.zip
 pip install pygraphviz
 ~~~
 
-## Step 4. At the end of a session, the virtual environment can be deactivated.
+## Step 4 -- Open web2py in a browser
+~~~sh
+(playpen) aubreymoore@aubreymoore-Aspire-7750Z:~/Devel/playpen/web2py$ python web2py.py
+~~~
+
+## Step 5 -- Open web2py in a python shell
+~~~
+(playpen) aubreymoore@aubreymoore-Aspire-7750Z:~/Devel/playpen/web2py$ python web2py.py -S pestlist/default -M
+~~~
+
+## Step 6. At the end of a session, the virtual environment can be deactivated.
 ~~~sh
 source deactivate playpen
 ~~~
 
-## Step 5. To undo everything:
+## Step 7. To undo everything:
 ~~~sh
 conda remove -n playpen --all
 cd ..
