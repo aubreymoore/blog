@@ -23,10 +23,10 @@ Alternatively, you can use the Species API: <http://api.gbif.org/v1/species/sear
 
 Once we have the GBIF ID, which is 5109848 for *Spodoptera mauritia*, we can harvest more data:
 
-* Name usage: http://api.gbif.org/v1/species/5109848
-* Synonyms: http://api.gbif.org/v1/species/5109848/synonyms
-* Vernacular names: http://api.gbif.org/v1/species/5109848/vernacularNames
-* Media: http://api.gbif.org/v1/species/5109848/media
-* References: http://api.gbif/v1/species/5109848/
-* Distributios: http://api.gbif.org/v1/species/5109848/distributions
-* Descriptions: http://api.gbif.org/v1/species/5109848/descriptions
+* Name usage: <http://api.gbif.org/v1/species/5109848>
+* Synonyms: <http://api.gbif.org/v1/species/5109848/synonyms>
+* Vernacular names: <http://api.gbif.org/v1/species/5109848/vernacularNames>
+* Media: <http://api.gbif.org/v1/species/5109848/media>
+* References: <http://api.gbif/v1/species/5109848/references>
+* Distributios: <http://api.gbif.org/v1/species/5109848/distributions>
+* Descriptions: <http://api.gbif.org/v1/species/5109848/descriptions>
