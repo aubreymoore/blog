@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://aubreymoore.github.io/blog/</loc>
-  <lastmod>2017-02-10T23:32:00Z</lastmod>
+  <lastmod>2017-04-21T22:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/2016/</loc>
@@ -19,11 +19,11 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/archive.html</loc>
-  <lastmod>2017-04-08T16:44:00Z</lastmod>
+  <lastmod>2017-04-21T22:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/</loc>
-  <lastmod>2017-04-08T17:21:00Z</lastmod>
+  <lastmod>2017-04-21T23:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/anaconda/</loc>
@@ -36,6 +36,10 @@
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/dreamhost/</loc>
   <lastmod>2017-02-10T23:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/categories/gbif-json-taxonomy-biodiversity/</loc>
+  <lastmod>2017-04-21T23:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/github-pages/</loc>
@@ -78,6 +82,10 @@
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
  <url>
+  <loc>https://aubreymoore.github.io/blog/index-1.html</loc>
+  <lastmod>2017-04-21T22:26:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://aubreymoore.github.io/blog/listings/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
  </url>
@@ -114,6 +122,10 @@
   <lastmod>2017-02-10T23:32:00Z</lastmod>
  </url>
  <url>
+  <loc>https://aubreymoore.github.io/blog/posts/h1-idusing-the-species-api-to-mine-the-gbif-backbone-taxonomya-nameusing-the-species-api-to-mine-the-gbif-backbone-taxonomy-hrefusing-the-species-api-to-mine-the-gbif-backbone-taxonomyausing-the-species%20api%20to%20mine%20the%20gbif%20backbone%20taxonomyh1/</loc>
+  <lastmod>2017-04-21T22:24:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://aubreymoore.github.io/blog/posts/nikola-site-is-on-github/</loc>
   <lastmod>2016-12-29T00:14:00Z</lastmod>
  </url>
@@ -148,6 +160,10 @@
  <url>
   <loc>https://aubreymoore.github.io/blog/posts/using-scrapy-to-find-a-string-in-a-web-site/</loc>
   <lastmod>2017-02-11T10:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/posts/using-the-species-api-to-mine-the-gbif-backbone-taxonomy/</loc>
+  <lastmod>2017-04-21T22:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/tipue_search.html</loc>

@@ -9,8 +9,9 @@
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://aubreymoore.github.io/blog/">
+<link rel="next" href="index-1.html" type="text/html">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="assets/css/tipuesearch.css">
-<link rel="prefetch" href="posts/setting-up-an-online-weather-station/" type="text/html">
+<link rel="prefetch" href="posts/using-the-species-api-to-mine-the-gbif-backbone-taxonomy/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -63,7 +64,44 @@
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/setting-up-an-online-weather-station/" class="u-url">Setting Up an Online Weather Station</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-the-species-api-to-mine-the-gbif-backbone-taxonomy/" class="u-url">Using the Species API to Mine the GBIF Backbone Taxonomy</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Aubrey Moore
+            </span></p>
+            <p class="dateline"><a href="posts/using-the-species-api-to-mine-the-gbif-backbone-taxonomy/" rel="bookmark"><time class="published dt-published" datetime="2017-04-22T08:26:03+10:00" title="2017-04-22 08:26">2017-04-22 08:26</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<h2>Using the Species API to Mine the GBIF Backbone Taxonomy</h2>
+<h4>Here's how to get tons of info from GBIF.</h4>
+<p>Check out the <a href="http://www.gbif.org/developer/species">Species API</a>.</p>
+<p>First step is to locate the taxon in the GBIF Backbone Taxonomy. The GBIF Backbone Taxonomy, often called the Nub taxonomy, is a single synthetic management classification with the goal of covering all names GBIF is dealing with. </p>
+<p>You can search GBIF manually by going to http://www.gbif.org/species and entering a scientific name or common name. The magic number you are looking for is the <strong>GBIF ID</strong>.</p>
+<p>Alternatively, you can use the Species API: http://api.gbif.org/v1/species/search?q=lawn%20armyworm&amp;rank=SPECIES. This will return info encoded as JSON. The magic number in this case is <strong>nubKey</strong>. </p>
+<p>Once we have the GBIF ID, which is 5109848 for <em>Spodoptera mauritia</em>, we can harvest more data:</p>
+<ul>
+<li>Name usage: http://api.gbif.org/v1/species/5109848</li>
+<li>Synonyms: http://api.gbif.org/v1/species/5109848/synonyms</li>
+<li>Vernacular names: http://api.gbif.org/v1/species/5109848/vernacularNames</li>
+<li>Media: http://api.gbif.org/v1/species/5109848/media</li>
+<li>References: http://api.gbif/v1/species/5109848/</li>
+<li>Distributios: http://api.gbif.org/v1/species/5109848/distributions</li>
+<li>Descriptions: http://api.gbif.org/v1/species/5109848/descriptions</li>
+</ul>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/h1-idusing-the-species-api-to-mine-the-gbif-backbone-taxonomya-nameusing-the-species-api-to-mine-the-gbif-backbone-taxonomy-hrefusing-the-species-api-to-mine-the-gbif-backbone-taxonomyausing-the-species%20api%20to%20mine%20the%20gbif%20backbone%20taxonomyh1/" class="u-url">&lt;h1 id="using-the-species-api-to-mine-the-gbif-backbone-taxonomy"&gt;&lt;a name="using-the-species-api-to-mine-the-gbif-backbone-taxonomy" href="#using-the-species-api-to-mine-the-gbif-backbone-taxonomy"&gt;&lt;/a&gt;Using the Species API to Mine the GBIF Backbone Taxonomy&lt;/h1&gt;</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Aubrey Moore
+            </span></p>
+            <p class="dateline"><a href="posts/h1-idusing-the-species-api-to-mine-the-gbif-backbone-taxonomya-nameusing-the-species-api-to-mine-the-gbif-backbone-taxonomy-hrefusing-the-species-api-to-mine-the-gbif-backbone-taxonomyausing-the-species%20api%20to%20mine%20the%20gbif%20backbone%20taxonomyh1/" rel="bookmark"><time class="published dt-published" datetime="2017-04-22T08:24:54+10:00" title="2017-04-22 08:24">2017-04-22 08:24</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Write your post here.</p>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/setting-up-an-online-weather-station/" class="u-url">Setting Up an Online Weather Station</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Aubrey Moore
@@ -393,52 +431,15 @@ rm -rf my_project_folder
 <p>Need to go to work now.</p>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/taxonomic-notes/" class="u-url">Taxonomic Notes</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Aubrey Moore
-            </span></p>
-            <p class="dateline"><a href="posts/taxonomic-notes/" rel="bookmark"><time class="published dt-published" datetime="2016-12-29T08:43:00+10:00" title="2016-12-29 08:43">2016-12-29 08:43</time></a></p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<h4>Recording Synonyms</h4>
-<ul>
-<li>
-<p>According to <a href="http://www.gbif.org/system/files_force/gbif_resource/resource-80642/gbif_gna_profile_reference_guide.pdf?download=1">GBIF GNA Profile Reference Guide for Darwin Core Archive, Core Terms and Extensions</a>: "Synonyms occupy separate lines and therefore also have unique taxonIDs."</p>
-</li>
-<li>
-<p>In <a href="http://www.gbif.org/system/files_force/gbif_resource/resource-80647/checklist_how-tw.v2.pdf">Publishing Species Checklists, Step-by-Step Guide</a>, there is a good example of how to handle synonyms on page 18.  This is a very good, detailed reference.</p>
-</li>
-<li>
-<p>Several references indicate that misspellings should be noted in <strong>dwc:taxonRemarks</strong>. Example: "this name is a misspelling in common use"</p>
-</li>
-</ul>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/test-post/" class="u-url">Configuring Nikola and Adding Full Text Search</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Aubrey Moore
-            </span></p>
-            <p class="dateline"><a href="posts/test-post/" rel="bookmark"><time class="published dt-published" datetime="2016-12-29T07:43:54+10:00" title="2016-12-29 07:43">2016-12-29 07:43</time></a></p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p>This <a href="http://simonvanderveldt.nl/configuring-nikola/">post</a> was helpful in learning how to configure Nikola.</p>
-<p><a href="http://ralsina.me/weblog/posts/standalone-search-in-nikola.html#id2">Here's a post that shows how to add full text search to a Nikola site.</a> </p>
-</div>
-    </div>
     </article>
 </div>
 
-
-
-
-
-
-
-        </div>
+        <nav class="postindexpager"><ul class="pager">
+<li class="next">
+                <a href="index-1.html" rel="next">Older posts</a>
+            </li>
+        </ul></nav>
+</div>
         <!--End of body content-->
 
         <footer id="footer">
