@@ -23,11 +23,15 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/</loc>
-  <lastmod>2017-04-21T23:30:00Z</lastmod>
+  <lastmod>2017-04-21T23:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/anaconda/</loc>
   <lastmod>2017-02-21T06:38:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/categories/biodiversity/</loc>
+  <lastmod>2017-04-21T23:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/css/</loc>
@@ -42,8 +46,16 @@
   <lastmod>2017-04-21T23:30:00Z</lastmod>
  </url>
  <url>
+  <loc>https://aubreymoore.github.io/blog/categories/gbif/</loc>
+  <lastmod>2017-04-21T23:59:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://aubreymoore.github.io/blog/categories/github-pages/</loc>
   <lastmod>2017-02-11T00:56:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/categories/json/</loc>
+  <lastmod>2017-04-21T23:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/nikola/</loc>
@@ -64,6 +76,10 @@
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/raspberry-pi/</loc>
   <lastmod>2017-04-08T17:21:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/categories/taxonomy/</loc>
+  <lastmod>2017-04-21T23:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/virtualenv/</loc>

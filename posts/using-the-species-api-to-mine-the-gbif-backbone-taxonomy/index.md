@@ -2,16 +2,14 @@
 .. title: Using the Species API to Mine the GBIF Backbone Taxonomy
 .. slug: using-the-species-api-to-mine-the-gbif-backbone-taxonomy
 .. date: 2017-04-22 08:26:03 UTC+10:00
-.. tags: GBIF JSON taxonomy biodiversity
+.. tags: GBIF, JSON, taxonomy, biodiversity
 .. category:
 .. link:
 .. description:
 .. type: text
 -->
 
-# Using the Species API to Mine the GBIF Backbone Taxonomy
-
-###Here's how to get tons of info from GBIF.
+### Here's how to get tons of info from GBIF.
 
 Check out the [Species API](http://www.gbif.org/developer/species).
 
