@@ -9,9 +9,9 @@
 .. type: text
 -->
 
-Was asked to set up an on-line weather station for the University of Guam's Agricutural Experiment Station at Yigo, Guam. The weather station is a [Davis Vantage Pro 2 Plus](http://www.davisnet.com/solution/vantage-pro2/) on a mast mounted on the roof of a 40 foot shipping container. The container is equipped with internet access via a wireless modem. Data is fetched from the weather instruments using a Davis Vantage Pro 2 console fitted with an optional data logger.
+Was asked to set up an on-line weather station for the University of Guam's Agricutural Experiment Station at Yigo, Guam. The weather station is a [Davis Vantage Pro 2 Plus](http://www.davisnet.com/solution/vantage-pro2/) on a mast mounted on the roof of a 40 foot shipping container. The container is equipped with internet access via a cable modem. Data is fetched from the weather instruments using a Davis Vantage Pro 2 console fitted with an optional data logger.
 
-Decided to use a [Raspberry Pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) to read data from the weather station console via USB. Data is stored using [weewx](http://www.weewx.com/) software, which also takes care of sending it to Weather Underground. The RP uses its built-in wireless to communicate with the wireless modem.
+Decided to use a [Raspberry Pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) to read data from the weather station console via USB. Data is stored using [weewx](http://www.weewx.com/) software, which also takes care of sending it to Weather Underground. The RP is connected to the modem by a cable.
 
 ## Step 1: Install weewx on RP
 
@@ -37,3 +37,9 @@ WU assigned **KYIGO4** as the weather station ID.
 
 The weather station is online at:
 <https://www.wunderground.com/personal-weather-station/dashboard?ID=KYIGO4>
+
+This page automatically updates every few seconds.
+
+## Notes
+
+All outdoor sensors were replaced on April 21, 2017 because the temperature/humidity senor was not working.
