@@ -10,7 +10,7 @@
 <link rel="canonical" href="https://aubreymoore.github.io/blog/posts/using-the-species-api-to-mine-the-gbif-backbone-taxonomy/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="../../assets/css/tipuesearch.css">
 <meta name="author" content="Aubrey Moore">
-<link rel="prev" href="../h1-idusing-the-species-api-to-mine-the-gbif-backbone-taxonomya-nameusing-the-species-api-to-mine-the-gbif-backbone-taxonomy-hrefusing-the-species-api-to-mine-the-gbif-backbone-taxonomyausing-the-species%20api%20to%20mine%20the%20gbif%20backbone%20taxonomyh1/" title='&lt;h1 id="using-the-species-api-to-mine-the-gbif-backbone-taxonomy"&gt;&lt;a name="using-the-species-api-to-mine-the-gbif-backbone-taxonomy" href="#using-the-species-api-to-mine-the-gbif-backbone-taxonomy"&gt;&lt;/a&gt;Using the Species API to Mine the GBIF Backbone Taxonomy&lt;/h1&gt;' type="text/html">
+<link rel="prev" href="../setting-up-an-online-weather-station/" title="Setting Up an Online Weather Station" type="text/html">
 <meta property="og:site_name" content="Aubrey Moore">
 <meta property="og:title" content="Using the Species API to Mine the GBIF Backbone Taxonomy">
 <meta property="og:url" content="https://aubreymoore.github.io/blog/posts/using-the-species-api-to-mine-the-gbif-backbone-taxonomy/">
@@ -94,9 +94,9 @@ First step is to locate the taxon in the GBIF Backbone Taxonomy. The GBIF ">
 <h2>Using the Species API to Mine the GBIF Backbone Taxonomy</h2>
 <h4>Here's how to get tons of info from GBIF.</h4>
 <p>Check out the <a href="http://www.gbif.org/developer/species">Species API</a>.</p>
-<p>First step is to locate the taxon in the GBIF Backbone Taxonomy. The GBIF Backbone Taxonomy, often called the Nub taxonomy, is a single synthetic management classification with the goal of covering all names GBIF is dealing with. </p>
-<p>You can search GBIF manually by going to http://www.gbif.org/species and entering a scientific name or common name. The magic number you are looking for is the <strong>GBIF ID</strong>.</p>
-<p>Alternatively, you can use the Species API: http://api.gbif.org/v1/species/search?q=lawn%20armyworm&amp;rank=SPECIES. This will return info encoded as JSON. The magic number in this case is <strong>nubKey</strong>. </p>
+<p>First step is to locate the taxon in the GBIF Backbone Taxonomy. The GBIF Backbone Taxonomy, often called the Nub taxonomy, is a single synthetic management classification with the goal of covering all names GBIF is dealing with.</p>
+<p>You can search GBIF manually by going to <a href="http://www.gbif.org/species">http://www.gbif.org/species</a> and entering a scientific name or common name. The magic number you are looking for is the <strong>GBIF ID</strong>.</p>
+<p>Alternatively, you can use the Species API: <a href="http://api.gbif.org/v1/species/search?q=lawn%20armyworm&amp;rank=SPECIES">http://api.gbif.org/v1/species/search?q=lawn%20armyworm&amp;rank=SPECIES</a>. This will return info encoded as JSON. The magic number in this case is <strong>nubKey</strong>.</p>
 <p>Once we have the GBIF ID, which is 5109848 for <em>Spodoptera mauritia</em>, we can harvest more data:</p>
 <ul>
 <li>Name usage: http://api.gbif.org/v1/species/5109848</li>
@@ -114,7 +114,7 @@ First step is to locate the taxon in the GBIF Backbone Taxonomy. The GBIF ">
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../h1-idusing-the-species-api-to-mine-the-gbif-backbone-taxonomya-nameusing-the-species-api-to-mine-the-gbif-backbone-taxonomy-hrefusing-the-species-api-to-mine-the-gbif-backbone-taxonomyausing-the-species%20api%20to%20mine%20the%20gbif%20backbone%20taxonomyh1/" rel="prev" title='&lt;h1 id="using-the-species-api-to-mine-the-gbif-backbone-taxonomy"&gt;&lt;a name="using-the-species-api-to-mine-the-gbif-backbone-taxonomy" href="#using-the-species-api-to-mine-the-gbif-backbone-taxonomy"&gt;&lt;/a&gt;Using the Species API to Mine the GBIF Backbone Taxonomy&lt;/h1&gt;'>Previous post</a>
+                <a href="../setting-up-an-online-weather-station/" rel="prev" title="Setting Up an Online Weather Station">Previous post</a>
             </li>
         </ul></nav></aside></article>
 </div>
