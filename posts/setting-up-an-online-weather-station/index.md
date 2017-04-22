@@ -13,13 +13,13 @@ Was asked to set up an on-line weather station for the University of Guam's Agri
 
 Decided to use a [Raspberry Pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) to read data from the weather station console via USB. Data is stored using [weewx](http://www.weewx.com/) software, which also takes care of sending it to Weather Underground. The RP is connected to the modem by a cable.
 
-## Step 1: Install weewx on RP
+## Step 1: Install weewx on RPi
 
-## Step 2: Remove the Fake Clock on the RP
+## Step 2: Remove the Fake Clock on the RPi
 
 Following the suggestion in
 <https://github.com/weewx/weewx/wiki/Raspberry-Pi>,
-I deleted the fake hardware clock from the RP:
+I deleted the fake hardware clock from the RPi:
 
     $ sudo apt-get purge fake-hwclock
 
