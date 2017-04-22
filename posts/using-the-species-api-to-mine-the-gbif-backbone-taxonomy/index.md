@@ -1,7 +1,7 @@
 <!--
 .. title: Using the Species API to Mine the GBIF Backbone Taxonomy
 .. slug: using-the-species-api-to-mine-the-gbif-backbone-taxonomy
-.. date: 2017-04-22 08:26:03 UTC+10:00
+.. date: 2017-04-22 10:34
 .. tags: GBIF, JSON, taxonomy, biodiversity
 .. category:
 .. link:
@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-### Here's how to get tons of info from GBIF.
+## Here's how to get tons of info from GBIF.
 
 Check out the [Species API](http://www.gbif.org/developer/species).
 
@@ -26,5 +26,5 @@ Once we have the GBIF ID, which is 5109848 for *Spodoptera mauritia*, we can har
 * Vernacular names: <http://api.gbif.org/v1/species/5109848/vernacularNames>
 * Media: <http://api.gbif.org/v1/species/5109848/media>
 * References: <http://api.gbif/v1/species/5109848/references>
-* Distributios: <http://api.gbif.org/v1/species/5109848/distributions>
+* Distributions: <http://api.gbif.org/v1/species/5109848/distributions>
 * Descriptions: <http://api.gbif.org/v1/species/5109848/descriptions>
