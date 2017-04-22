@@ -40,7 +40,7 @@ The weather station is online at:
 
 This page automatically updates every few seconds.
 
-<object width="290" height="130"><param name="movie" value="http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=KYIGO4&freq=&units=english&lang=EN" /><embed src="http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=KYIGO4&freq=&units=english&lang=EN" type="application/x-shockwave-flash" width="290" height="130" /></object>
+<a href="http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KYIGO4"><img src="http://banners.wunderground.com/cgi-bin/banner/ban/wxBanner?bannertype=pws250&weatherstationcount=KYIGO4" width="250" height="150" border="0" alt="Weather Underground PWS KYIGO4" /></a>
 
 ## Notes
 
