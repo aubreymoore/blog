@@ -40,6 +40,8 @@ The weather station is online at:
 
 This page automatically updates every few seconds.
 
+<object width="290" height="130"><param name="movie" value="http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=KYIGO4&freq=&units=english&lang=EN" /><embed src="http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=KYIGO4&freq=&units=english&lang=EN" type="application/x-shockwave-flash" width="290" height="130" /></object>
+
 ## Notes
 
 All outdoor sensors were replaced on April 21, 2017 because the temperature/humidity senor was not working.
