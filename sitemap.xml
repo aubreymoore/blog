@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/archive.html</loc>
-  <lastmod>2017-04-21T23:55:00Z</lastmod>
+  <lastmod>2017-05-01T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/</loc>
@@ -95,7 +95,7 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/index-1.html</loc>
-  <lastmod>2017-04-21T23:55:00Z</lastmod>
+  <lastmod>2017-05-01T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/listings/</loc>
@@ -107,7 +107,7 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/listings/hello.py.html</loc>
-  <lastmod>2017-02-20T09:23:00Z</lastmod>
+  <lastmod>2017-05-01T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/pages/charts/</loc>
@@ -132,6 +132,10 @@
  <url>
   <loc>https://aubreymoore.github.io/blog/posts/failed-attempt-to-run-wep2py-on-dreamhost/</loc>
   <lastmod>2017-02-10T23:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/posts/finding-lost-parents/</loc>
+  <lastmod>2017-05-01T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/posts/nikola-site-is-on-github/</loc>

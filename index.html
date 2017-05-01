@@ -6,12 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aubrey Moore</title>
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://aubreymoore.github.io/blog/">
 <link rel="next" href="index-1.html" type="text/html">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="assets/css/tipuesearch.css">
-<link rel="prefetch" href="posts/using-the-species-api-to-mine-the-gbif-backbone-taxonomy/" type="text/html">
+<link rel="prefetch" href="posts/finding-lost-parents/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -64,7 +66,297 @@
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-the-species-api-to-mine-the-gbif-backbone-taxonomy/" class="u-url">Using the Species API to Mine the GBIF Backbone Taxonomy</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/finding-lost-parents/" class="u-url">Finding Lost Parents</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Aubrey Moore
+            </span></p>
+            <p class="dateline"><a href="posts/finding-lost-parents/" rel="bookmark"><time class="published dt-published" datetime="2017-05-01T13:01:11+10:00" title="2017-05-01 13:01">2017-05-01 13:01</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Finding-Missing-Parents-in-a-Child-Parent-Self-Referencing-Table">Finding Missing Parents in a Child-Parent Self-Referencing Table<a class="anchor-link" href="posts/finding-lost-parents/#Finding-Missing-Parents-in-a-Child-Parent-Self-Referencing-Table">¶</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">pymysql</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">getpass</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Pattern:-Find-items-in-one-list-which-does-not-occur-in-a-second-list">Pattern: Find items in one list which does not occur in a second list<a class="anchor-link" href="posts/finding-lost-parents/#Pattern:-Find-items-in-one-list-which-does-not-occur-in-a-second-list">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># To find parent_tids which do not have corresponding tids,</span>
+<span class="c1"># convert lists to sets and calculate the difference.</span>
+
+<span class="n">tid</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">,</span> <span class="s2">"d"</span><span class="p">,</span> <span class="s2">"e"</span><span class="p">]</span>
+<span class="n">parent_tid</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"f"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">,</span> <span class="s2">"m"</span><span class="p">]</span>
+<span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">parent_tid</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="n">tid</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[2]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>['m', 'f']</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Repeat-using-data-from-database">Repeat using data from database<a class="anchor-link" href="posts/finding-lost-parents/#Repeat-using-data-from-database">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">password</span> <span class="o">=</span> <span class="n">getpass</span><span class="o">.</span><span class="n">getpass</span><span class="p">(</span><span class="s1">'Database password: '</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Database password: ········
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">'mysql+pymysql://aubreymoore:{}@localhost/pestlist'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
+<span class="n">db</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">rs</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"select tid, parent_tid from taxon2;"</span><span class="p">)</span>
+<span class="n">tid_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">parent_tid_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">rs</span><span class="p">:</span>
+    <span class="n">tid_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">tid</span><span class="p">)</span>
+    <span class="n">parent_tid_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">parent_tid</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">tid_list</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[7]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>['6',
+ '7707728',
+ '196',
+ '1169',
+ '7683',
+ '2766430',
+ '2766636',
+ '220',
+ '407',
+ '6688']</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">parent_tid_list</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[8]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>['#',
+ '6',
+ '7707728',
+ '196',
+ '1169',
+ '7683',
+ '2766430',
+ '7707728',
+ '220',
+ '407']</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">missing_parents</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">parent_tid_list</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="n">tid_list</span><span class="p">))</span>
+<span class="n">missing_parents</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[9]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>['2002379', '#', '1890281']</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Results">Results<a class="anchor-link" href="posts/finding-lost-parents/#Results">¶</a>
+</h3>
+<p>There are two missing parent_tids. Note that '#' is the parent of root nodes, so this is OK.</p>
+<p>A constraint needs to be added to the <strong>taxon2</strong> table to prevent entry of a <strong>parent_tid</strong> which does not match an existing <strong>tid</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div>
+  </div>
+
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-the-species-api-to-mine-the-gbif-backbone-taxonomy/" class="u-url">Using the Species API to Mine the GBIF Backbone Taxonomy</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Aubrey Moore
@@ -448,29 +740,6 @@ rm -rf my_project_folder
 <p>Need to go to work now.</p>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/taxonomic-notes/" class="u-url">Taxonomic Notes</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Aubrey Moore
-            </span></p>
-            <p class="dateline"><a href="posts/taxonomic-notes/" rel="bookmark"><time class="published dt-published" datetime="2016-12-29T08:43:00+10:00" title="2016-12-29 08:43">2016-12-29 08:43</time></a></p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<h4>Recording Synonyms</h4>
-<ul>
-<li>
-<p>According to <a href="http://www.gbif.org/system/files_force/gbif_resource/resource-80642/gbif_gna_profile_reference_guide.pdf?download=1">GBIF GNA Profile Reference Guide for Darwin Core Archive, Core Terms and Extensions</a>: "Synonyms occupy separate lines and therefore also have unique taxonIDs."</p>
-</li>
-<li>
-<p>In <a href="http://www.gbif.org/system/files_force/gbif_resource/resource-80647/checklist_how-tw.v2.pdf">Publishing Species Checklists, Step-by-Step Guide</a>, there is a good example of how to handle synonyms on page 18.  This is a very good, detailed reference.</p>
-</li>
-<li>
-<p>Several references indicate that misspellings should be noted in <strong>dwc:taxonRemarks</strong>. Example: "this name is a misspelling in common use"</p>
-</li>
-</ul>
-</div>
-    </div>
     </article>
 </div>
 
@@ -478,7 +747,9 @@ rm -rf my_project_folder
 <li class="next">
                 <a href="index-1.html" rel="next">Older posts</a>
             </li>
-        </ul></nav>
+        </ul></nav><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});
+            </script>
 </div>
         <!--End of body content-->
 
