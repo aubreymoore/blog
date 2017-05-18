@@ -43,7 +43,7 @@
  </sitemap>
  <sitemap>
   <loc>https://aubreymoore.github.io/blog/categories/python.xml</loc>
-  <lastmod>2017-03-15T11:58:00Z</lastmod>
+  <lastmod>2017-05-18T03:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://aubreymoore.github.io/blog/categories/pythonanywhere.xml</loc>
@@ -52,6 +52,10 @@
  <sitemap>
   <loc>https://aubreymoore.github.io/blog/categories/raspberry-pi.xml</loc>
   <lastmod>2017-04-22T01:21:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://aubreymoore.github.io/blog/categories/scrapy.xml</loc>
+  <lastmod>2017-05-18T03:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://aubreymoore.github.io/blog/categories/taxonomy.xml</loc>
@@ -75,10 +79,10 @@
  </sitemap>
  <sitemap>
   <loc>https://aubreymoore.github.io/blog/rss.xml</loc>
-  <lastmod>2017-05-01T03:13:00Z</lastmod>
+  <lastmod>2017-05-18T03:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://aubreymoore.github.io/blog/sitemap.xml</loc>
-  <lastmod>2017-05-01T03:13:00Z</lastmod>
+  <lastmod>2017-05-18T03:30:00Z</lastmod>
  </sitemap>
 </sitemapindex>

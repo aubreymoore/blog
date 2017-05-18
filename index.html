@@ -13,7 +13,7 @@
 <link rel="canonical" href="https://aubreymoore.github.io/blog/">
 <link rel="next" href="index-1.html" type="text/html">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="assets/css/tipuesearch.css">
-<link rel="prefetch" href="posts/finding-lost-parents/" type="text/html">
+<link rel="prefetch" href="posts/using-scrapy-to-extract-scientific-names-from-pestnet-fact-sheets/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -66,7 +66,60 @@
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/finding-lost-parents/" class="u-url">Finding Lost Parents</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-scrapy-to-extract-scientific-names-from-pestnet-fact-sheets/" class="u-url">Using Scrapy to Extract Scientific Names from PestNet Fact Sheets</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Aubrey Moore
+            </span></p>
+            <p class="dateline"><a href="posts/using-scrapy-to-extract-scientific-names-from-pestnet-fact-sheets/" rel="bookmark"><time class="published dt-published" datetime="2017-05-18T13:00:26+10:00" title="2017-05-18 13:00">2017-05-18 13:00</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>PestNet serves a couple of hundred excellent pest fact sheets on its site at http://www.pestnet.org/fact_sheets/index.htm. Unfortunately, these are indexed only by vernacular names. I want to hyperlink to sheets using scientific names.  So I wrote a  <a href="https://scrapy.org/">scrapy</a> script to crawl the site and scrape the section from each page which contains scientific names.  </p>
+<pre class="code literal-block"><span></span><span class="kn">from</span> <span class="nn">scrapy.spiders</span> <span class="kn">import</span> <span class="n">CrawlSpider</span><span class="p">,</span> <span class="n">Rule</span>
+<span class="kn">from</span> <span class="nn">scrapy.contrib.linkextractors</span> <span class="kn">import</span> <span class="n">LinkExtractor</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="k">class</span> <span class="nc">someSpider</span><span class="p">(</span><span class="n">CrawlSpider</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s1">'crawltest'</span>
+    <span class="n">allowed_domains</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'www.pestnet.org'</span><span class="p">]</span>
+    <span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'http://www.pestnet.org/fact_sheets/index.htm'</span><span class="p">]</span>
+    <span class="n">rules</span> <span class="o">=</span> <span class="p">(</span> <span class="n">Rule</span><span class="p">(</span><span class="n">LinkExtractor</span><span class="p">(</span><span class="n">allow</span><span class="o">=</span><span class="p">()),</span> <span class="n">follow</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="s1">'parse_item'</span><span class="p">),</span> <span class="p">)</span>
+
+
+    <span class="c1"># Let's capture scientific names</span>
+    <span class="k">def</span> <span class="nf">parse_item</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+        <span class="n">log</span> <span class="o">=</span> <span class="s1">'scientific_names_log.md'</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">body</span><span class="p">)</span>
+        <span class="n">searchObj</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span> <span class="s1">r'&lt;a name="Scientific Name"(.*?)&lt;a name='</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">M</span><span class="o">|</span><span class="n">re</span><span class="o">.</span><span class="n">I</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">searchObj</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">searchObj</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="s2">"Nothing found!!"</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">log</span><span class="p">,</span> <span class="s1">'a'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">'{} {}</span><span class="se">\n</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">url</span><span class="p">,</span> <span class="n">result</span><span class="p">))</span>
+        <span class="k">return</span>
+</pre>
+
+
+<p>The script was invoked from the terminal using:</p>
+<pre class="code literal-block"><span></span>scrapy runspider scrapePP.py -s <span class="nv">DEPTH_LIMIT</span><span class="o">=</span>1
+</pre>
+
+
+<p>Here are the first few lines from <strong>scientific_names_log.md</strong>:</p>
+<pre class="code literal-block"><span></span>http://www.pestnet.org/fact_sheets/mini/index.htm Nothing found!!
+http://www.pestnet.org/fact_sheets/batiki_blue_grass_eye_spot_207.htm &gt;<span class="nt">&lt;/a&gt;&lt;h1</span> <span class="na">class=</span><span class="s">""</span> <span class="na">style=</span><span class="s">"False"</span><span class="nt">&gt;</span>Scientific Name<span class="nt">&lt;/h1&gt;&lt;P&gt;&lt;EM&gt;</span>Curvularia ischaemi<span class="nt">&lt;/EM&gt;&lt;/P&gt;</span>
+http://www.pestnet.org/fact_sheets/bean_pod_borer_037.htm &gt;<span class="nt">&lt;/a&gt;&lt;h1</span> <span class="na">class=</span><span class="s">""</span> <span class="na">style=</span><span class="s">"False"</span><span class="nt">&gt;</span>Scientific Name<span class="nt">&lt;/h1&gt;&lt;P&gt;&lt;EM&gt;</span>Maruca<span class="nt">&lt;/EM&gt;</span> <span class="nt">&lt;EM&gt;</span>vitrata<span class="nt">&lt;/EM&gt;</span>; it used to be known as <span class="nt">&lt;EM&gt;</span>Maruca testulalis.<span class="nt">&lt;/EM&gt;&lt;/P&gt;</span>
+http://www.pestnet.org/fact_sheets/bean_lace_bug_253.htm &gt;<span class="nt">&lt;/a&gt;&lt;h1</span> <span class="na">class=</span><span class="s">""</span> <span class="na">style=</span><span class="s">"False"</span><span class="nt">&gt;</span>Scientific Name<span class="nt">&lt;/h1&gt;&lt;P&gt;&lt;EM&gt;&lt;/EM&gt;</span><span class="ni">&amp;nbsp;</span><span class="nt">&lt;EM&gt;</span>Corythucha gossypii<span class="nt">&lt;/EM&gt;&lt;/P&gt;</span>
+http://www.pestnet.org/fact_sheets/bean_phaseolus_rust_217.htm &gt;<span class="nt">&lt;/a&gt;&lt;h1</span> <span class="na">class=</span><span class="s">""</span> <span class="na">style=</span><span class="s">"False"</span><span class="nt">&gt;</span>Scientific Name<span class="nt">&lt;/h1&gt;&lt;P&gt;&lt;EM&gt;</span>Uromyces appendiculatus<span class="nt">&lt;/EM&gt;</span> \r\nvar. <span class="nt">&lt;EM&gt;</span>appendiculatus.<span class="nt">&lt;/EM&gt;</span> Previously <span class="nt">&lt;EM&gt;</span>Uromyces \r\nphaseoli.<span class="nt">&lt;/EM&gt;</span> <span class="nt">&lt;/P&gt;</span>
+</pre>
+
+
+<p>As you can see, there was still some work to be done to clean this up. I used the <strong>atom</strong> editor to delete the extraneous bits and saved urls and scientific names to pacific_pests_insects.csv<a href="posts/using-scrapy-to-extract-scientific-names-from-pestnet-fact-sheets/files/pacific_pests_insects.csv">pacific_pests_insects.csv</a> . Note that this file contains info only on arthropod pests.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/finding-lost-parents/" class="u-url">Finding Lost Parents</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Aubrey Moore
@@ -725,19 +778,6 @@ use <span class="s2">"kill -SIGTERM 28797"</span> to shutdown the web2py server
 <pre class="code literal-block"><span></span><span class="nb">cd</span> ~
 rm -rf my_project_folder
 </pre>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/nikola-site-is-on-github/" class="u-url">Nikola Site is on GitHub</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Aubrey Moore
-            </span></p>
-            <p class="dateline"><a href="posts/nikola-site-is-on-github/" rel="bookmark"><time class="published dt-published" datetime="2016-12-29T10:14:01+10:00" title="2016-12-29 10:14">2016-12-29 10:14</time></a></p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p><a href="https://github.com/getnikola/nikola-site">Here it is.</a></p>
-<p>Need to go to work now.</p>
 </div>
     </div>
     </article>

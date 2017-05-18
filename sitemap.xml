@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://aubreymoore.github.io/blog/</loc>
-  <lastmod>2017-04-21T22:24:00Z</lastmod>
+  <lastmod>2017-05-18T03:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/2016/</loc>
@@ -19,11 +19,11 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/archive.html</loc>
-  <lastmod>2017-05-01T03:13:00Z</lastmod>
+  <lastmod>2017-05-18T03:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/</loc>
-  <lastmod>2017-04-21T23:59:00Z</lastmod>
+  <lastmod>2017-05-18T03:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/anaconda/</loc>
@@ -74,6 +74,10 @@
   <lastmod>2017-04-08T17:21:00Z</lastmod>
  </url>
  <url>
+  <loc>https://aubreymoore.github.io/blog/categories/scrapy/</loc>
+  <lastmod>2017-05-18T03:30:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://aubreymoore.github.io/blog/categories/taxonomy/</loc>
   <lastmod>2017-04-21T23:59:00Z</lastmod>
  </url>
@@ -95,7 +99,7 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/index-1.html</loc>
-  <lastmod>2017-05-01T03:13:00Z</lastmod>
+  <lastmod>2017-05-18T03:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/listings/</loc>
@@ -168,6 +172,10 @@
  <url>
   <loc>https://aubreymoore.github.io/blog/posts/usda-farm-bill-funding-for-coconut-rhinoceros-beetle-projects-in-guam-and-hawaii/</loc>
   <lastmod>2017-02-20T07:11:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/posts/using-scrapy-to-extract-scientific-names-from-pestnet-fact-sheets/</loc>
+  <lastmod>2017-05-18T03:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/posts/using-scrapy-to-find-a-string-in-a-web-site/</loc>
