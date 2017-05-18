@@ -51,4 +51,4 @@ http://www.pestnet.org/fact_sheets/bean_lace_bug_253.htm ></a><h1 class="" style
 http://www.pestnet.org/fact_sheets/bean_phaseolus_rust_217.htm ></a><h1 class="" style="False">Scientific Name</h1><P><EM>Uromyces appendiculatus</EM> \r\nvar. <EM>appendiculatus.</EM> Previously <EM>Uromyces \r\nphaseoli.</EM> </P>
 ~~~
 
-As you can see, there was still some work to be done to clean this up. I used the [atom](https://atom.io/)  editor to delete the extraneous bits and saved urls and scientific names to [pacific_pests_insects.csv](pacific_pests_insects.csv) . Note that this file contains info only on arthropod pests.
+As you can see, there was still some work to be done to clean this up. I used the [atom](https://atom.io/)  editor to delete the extraneous bits and saved urls and scientific names to [pacific_pests_insects.csv](/pacific_pests_insects.csv) . Note that this file contains info only on arthropod pests.
