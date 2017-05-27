@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Aubrey Moore</title><link>https://aubreymoore.github.io/blog/</link><description>All things techie.</description><atom:link rel="self" type="application/rss+xml" href="https://aubreymoore.github.io/blog/rss.xml"></atom:link><language>en</language><lastBuildDate>Thu, 18 May 2017 04:44:38 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Scrapy to Extract Scientific Names from PestNet Fact Sheets</title><link>https://aubreymoore.github.io/blog/posts/using-scrapy-to-extract-scientific-names-from-pestnet-fact-sheets/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;PestNet serves a couple of hundred excellent pest fact sheets on its site at http://www.pestnet.org/fact_sheets/index.htm. Unfortunately, these are indexed only by vernacular names. I want to hyperlink to sheets using scientific names.  So I wrote a  &lt;a href="https://scrapy.org/"&gt;scrapy&lt;/a&gt; script to crawl the site and scrape the section from each page which contains scientific names.  &lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Aubrey Moore</title><link>https://aubreymoore.github.io/blog/</link><description>All things techie.</description><atom:link href="https://aubreymoore.github.io/blog/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 27 May 2017 23:37:57 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Calculate geographical coordinates for equidistant points at vertices of a triangular grid</title><link>https://aubreymoore.github.io/blog/posts/calculate-geographical-coordinates-for-equidistant-points-at-vertices-of-a-triangular-grid/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;p&gt;GIST:
+&lt;script src="https://gist.github.com/aubreymoore/7f3688e88556e08a8069623ecf48b68f.js"&gt;&lt;/script&gt;&lt;/p&gt;</description><category>GIS GPS KML</category><guid>https://aubreymoore.github.io/blog/posts/calculate-geographical-coordinates-for-equidistant-points-at-vertices-of-a-triangular-grid/</guid><pubDate>Sat, 27 May 2017 23:33:46 GMT</pubDate></item><item><title>Using Scrapy to Extract Scientific Names from PestNet Fact Sheets</title><link>https://aubreymoore.github.io/blog/posts/using-scrapy-to-extract-scientific-names-from-pestnet-fact-sheets/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;PestNet serves a couple of hundred excellent pest fact sheets on its site at http://www.pestnet.org/fact_sheets/index.htm. Unfortunately, these are indexed only by vernacular names. I want to hyperlink to sheets using scientific names.  So I wrote a  &lt;a href="https://scrapy.org/"&gt;scrapy&lt;/a&gt; script to crawl the site and scrape the section from each page which contains scientific names.  &lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;scrapy.spiders&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;CrawlSpider&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Rule&lt;/span&gt;
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;scrapy.contrib.linkextractors&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;LinkExtractor&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;re&lt;/span&gt;
@@ -530,62 +531,4 @@ git remote add origin git@github.com:aubreymoore/blog.git
 &lt;li&gt;Pushed my site to github from the command line:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;nikola github_deploy
-&lt;/pre&gt;&lt;/div&gt;</description><category>github pages</category><category>Nikola</category><guid>https://aubreymoore.github.io/blog/posts/publish-nikola-site-on-github/</guid><pubDate>Sat, 11 Feb 2017 00:09:34 GMT</pubDate></item><item><title>Failed Attempt to Run wep2py on Dreamhost</title><link>https://aubreymoore.github.io/blog/posts/failed-attempt-to-run-wep2py-on-dreamhost/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;h2&gt;Failed Attempt to Run wep2py on Dreamhost&lt;/h2&gt;
-&lt;p&gt;Saturday, 11. February 2017 06:37AM &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;SSH to DreamHost shared hosting.&lt;/li&gt;
-&lt;li&gt;Run python. Version is 2.7.3&lt;/li&gt;
-&lt;li&gt;virtualenv is available&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Create virtualenv&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Reference http://docs.python-guide.org/en/latest/dev/virtualenvs/&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;mkdir my_project_folder
-&lt;span class="nb"&gt;cd&lt;/span&gt; my_project_folder
-virtualenv venv
-&lt;span class="nb"&gt;source&lt;/span&gt; venv/bin/activate
-pip install requests
-deactivate
-&lt;/pre&gt;
-
-
-&lt;h3&gt;Download web2py&lt;/h3&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;wget https://mdipierro.pythonanywhere.com/examples/static/web2py_src.zip
-unzip web2py_src.zip
-rm web2py_src.zip
-&lt;/pre&gt;
-
-
-&lt;h3&gt;First Attempt&lt;/h3&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;venv&lt;span class="o"&gt;)&lt;/span&gt;aubreymoore@cactus:~/my_project_folder $ &lt;span class="nb"&gt;cd&lt;/span&gt; web2py
-&lt;span class="o"&gt;(&lt;/span&gt;venv&lt;span class="o"&gt;)&lt;/span&gt;aubreymoore@cactus:~/my_project_folder/web2py $ ls
-CHANGELOG  LICENSE  MANIFEST.in  NEWINSTALL  README.markdown  VERSION  anyserver.py  applications  examples  extras  gluon  handlers  scripts  site-packages  web2py.py
-&lt;span class="o"&gt;(&lt;/span&gt;venv&lt;span class="o"&gt;)&lt;/span&gt;aubreymoore@cactus:~/my_project_folder/web2py $ python web2py.py
-web2py Web Framework
-Created by Massimo Di Pierro, Copyright 2007-2017
-Version 2.14.6-stable+timestamp.2016.05.10.00.21.47
-Database drivers available: sqlite3, imaplib, pyodbc, pymysql, pg8000
-WARNING:web2py:GUI not available because Tk library is not installed
-choose a password:
-
-please visit:
-    http://127.0.0.1:8000/
-use &lt;span class="s2"&gt;"kill -SIGTERM 28797"&lt;/span&gt; to shutdown the web2py server
-&lt;/pre&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;wep2py seems to run properly, but the local server it sets up is inaccessable&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Helpful Sites&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;https://groups.google.com/forum/#!topic/web2py/nixNhDrxHtQ&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Seems Overly Complicated - Give Up and Deploy to pythonanywhere&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;to clean up, we simply delete my_project_folder&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~
-rm -rf my_project_folder
-&lt;/pre&gt;&lt;/div&gt;</description><category>DreamHost</category><category>PythonAnywhere</category><category>web2py</category><guid>https://aubreymoore.github.io/blog/posts/failed-attempt-to-run-wep2py-on-dreamhost/</guid><pubDate>Fri, 10 Feb 2017 23:28:41 GMT</pubDate></item></channel></rss>
+&lt;/pre&gt;&lt;/div&gt;</description><category>github pages</category><category>Nikola</category><guid>https://aubreymoore.github.io/blog/posts/publish-nikola-site-on-github/</guid><pubDate>Sat, 11 Feb 2017 00:09:34 GMT</pubDate></item></channel></rss>

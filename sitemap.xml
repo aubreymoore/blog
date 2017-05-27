@@ -19,11 +19,11 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/archive.html</loc>
-  <lastmod>2017-05-18T03:30:00Z</lastmod>
+  <lastmod>2017-05-27T23:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/</loc>
-  <lastmod>2017-05-18T03:30:00Z</lastmod>
+  <lastmod>2017-05-27T23:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/anaconda/</loc>
@@ -44,6 +44,10 @@
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/gbif/</loc>
   <lastmod>2017-04-21T23:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/categories/gis-gps-kml/</loc>
+  <lastmod>2017-05-27T23:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/github-pages/</loc>
@@ -99,7 +103,7 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/index-1.html</loc>
-  <lastmod>2017-05-18T03:30:00Z</lastmod>
+  <lastmod>2017-05-27T23:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/listings/</loc>
@@ -132,6 +136,10 @@
  <url>
   <loc>https://aubreymoore.github.io/blog/pages/social_buttons/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/posts/calculate-geographical-coordinates-for-equidistant-points-at-vertices-of-a-triangular-grid/</loc>
+  <lastmod>2017-05-27T23:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/posts/failed-attempt-to-run-wep2py-on-dreamhost/</loc>
