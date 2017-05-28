@@ -22,7 +22,10 @@ convenient to put traps at the vertices of a rectangular grid, this is not
 optimal because nearest neighbors on the diag">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-05-28T09:33:46+10:00">
-<meta property="article:tag" content="GIS GPS KML">
+<meta property="article:tag" content="GIS">
+<meta property="article:tag" content="GPS">
+<meta property="article:tag" content="KML">
+<meta property="article:tag" content="python">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -97,16 +100,19 @@ optimal because nearest neighbors on the diag">
 convenient to put traps at the vertices of a rectangular grid, this is not
 optimal because nearest neighbors on the diagonals are further away than those
 within rows or columns (If the spacing within rows and columns is X, then the
-diagonal spacing is sqrt(0.75)*X).  For equidistant spacing, points are placed
+diagonal spacing is sqrt(2)*X).  For equidistant spacing, points are placed
 at vertices of a grid made with equilateral triangles. This python script
-returns such a grid of points and returns the data as a KML file containing
+calculates such a grid of points and returns the data as a KML file containing
 latitude/longitude coordinates in decimal degrees.</p>
 <script src="https://gist.github.com/aubreymoore/7f3688e88556e08a8069623ecf48b68f.js"></script><p>The KML file may be displayed using Google Earth.</p>
 <p><img alt="example output" src="../../images/points.jpg"></p>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../categories/gis-gps-kml/" rel="tag">GIS GPS KML</a></li>
+<li><a class="tag p-category" href="../../categories/gis/" rel="tag">GIS</a></li>
+            <li><a class="tag p-category" href="../../categories/gps/" rel="tag">GPS</a></li>
+            <li><a class="tag p-category" href="../../categories/kml/" rel="tag">KML</a></li>
+            <li><a class="tag p-category" href="../../categories/python/" rel="tag">python</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">

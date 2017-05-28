@@ -30,16 +30,28 @@
   <lastmod>2017-05-28T06:31:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://aubreymoore.github.io/blog/categories/gis.xml</loc>
+  <lastmod>2017-05-28T07:21:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://aubreymoore.github.io/blog/categories/github-pages.xml</loc>
   <lastmod>2017-02-20T09:23:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://aubreymoore.github.io/blog/categories/github.xml</loc>
-  <lastmod>2017-05-28T07:13:00Z</lastmod>
+  <lastmod>2017-05-28T07:21:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://aubreymoore.github.io/blog/categories/gps.xml</loc>
+  <lastmod>2017-05-28T07:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://aubreymoore.github.io/blog/categories/json.xml</loc>
   <lastmod>2017-04-22T01:02:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://aubreymoore.github.io/blog/categories/kml.xml</loc>
+  <lastmod>2017-05-28T07:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://aubreymoore.github.io/blog/categories/nikola.xml</loc>
@@ -50,12 +62,8 @@
   <lastmod>2017-02-20T09:23:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://aubreymoore.github.io/blog/categories/python-web2py-github.xml</loc>
-  <lastmod>2017-05-28T07:05:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://aubreymoore.github.io/blog/categories/python.xml</loc>
-  <lastmod>2017-05-28T07:13:00Z</lastmod>
+  <lastmod>2017-05-28T07:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://aubreymoore.github.io/blog/categories/pythonanywhere.xml</loc>
@@ -79,7 +87,7 @@
  </sitemap>
  <sitemap>
   <loc>https://aubreymoore.github.io/blog/categories/web2py.xml</loc>
-  <lastmod>2017-05-28T07:13:00Z</lastmod>
+  <lastmod>2017-05-28T07:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://aubreymoore.github.io/blog/galleries/demo/rss.xml</loc>
@@ -91,10 +99,10 @@
  </sitemap>
  <sitemap>
   <loc>https://aubreymoore.github.io/blog/rss.xml</loc>
-  <lastmod>2017-05-28T07:13:00Z</lastmod>
+  <lastmod>2017-05-28T07:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://aubreymoore.github.io/blog/sitemap.xml</loc>
-  <lastmod>2017-05-28T07:13:00Z</lastmod>
+  <lastmod>2017-05-28T07:21:00Z</lastmod>
  </sitemap>
 </sitemapindex>

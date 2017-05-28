@@ -23,7 +23,7 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/</loc>
-  <lastmod>2017-05-28T07:13:00Z</lastmod>
+  <lastmod>2017-05-28T07:21:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/anaconda/</loc>
@@ -50,6 +50,10 @@
   <lastmod>2017-05-27T23:37:00Z</lastmod>
  </url>
  <url>
+  <loc>https://aubreymoore.github.io/blog/categories/gis/</loc>
+  <lastmod>2017-05-28T07:21:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://aubreymoore.github.io/blog/categories/github-pages/</loc>
   <lastmod>2017-02-11T00:56:00Z</lastmod>
  </url>
@@ -58,8 +62,16 @@
   <lastmod>2017-05-28T07:13:00Z</lastmod>
  </url>
  <url>
+  <loc>https://aubreymoore.github.io/blog/categories/gps/</loc>
+  <lastmod>2017-05-28T07:21:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://aubreymoore.github.io/blog/categories/json/</loc>
   <lastmod>2017-04-21T23:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/categories/kml/</loc>
+  <lastmod>2017-05-28T07:21:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/nikola/</loc>
@@ -68,10 +80,6 @@
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/python-scrapy/</loc>
   <lastmod>2017-02-11T10:13:00Z</lastmod>
- </url>
- <url>
-  <loc>https://aubreymoore.github.io/blog/categories/python-web2py-github/</loc>
-  <lastmod>2017-05-28T07:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/python/</loc>
