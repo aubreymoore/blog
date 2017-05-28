@@ -16,7 +16,9 @@
 <meta property="og:site_name" content="Aubrey Moore">
 <meta property="og:title" content="Calculate geographical coordinates for equidistant points at vertices ">
 <meta property="og:url" content="https://aubreymoore.github.io/blog/posts/calculate-geographical-coordinates-for-equidistant-points-at-vertices-of-a-triangular-grid/">
-<meta property="og:description" content="GIST:">
+<meta property="og:description" content="I needed to set up a grid of equally spaced insect pheromone traps. While it is
+convenient to put traps at the vertices of a rectangular grid, this is not
+optimal because nearest neighbors on the diag">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-05-28T09:33:46+10:00">
 <meta property="article:tag" content="GIS GPS KML">
@@ -89,8 +91,18 @@
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>GIST:
-<script src="https://gist.github.com/aubreymoore/7f3688e88556e08a8069623ecf48b68f.js"></script></p>
+    <div>
+<p>I needed to set up a grid of equally spaced insect pheromone traps. While it is
+convenient to put traps at the vertices of a rectangular grid, this is not
+optimal because nearest neighbors on the diagonals are further away than those
+within rows or columns (If the spacing within rows and columns is X, then the
+diagonal spacing is sqrt(0.75)*X).  For equidistant spacing, points are placed
+at vertices of a grid made with equilateral triangles. This python script
+returns such a grid of points and returns the data as a KML file containing
+latitude/longitude coordinates in decimal degrees.</p>
+<script src="https://gist.github.com/aubreymoore/7f3688e88556e08a8069623ecf48b68f.js"></script><p>The KML file may be displayed using Google Earth.</p>
+<p><img alt="example output" src="../../images/points.jpg"></p>
+</div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../categories/gis-gps-kml/" rel="tag">GIS GPS KML</a></li>
