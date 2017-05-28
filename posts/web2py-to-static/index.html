@@ -3,26 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Calculate geographical coordinates for equidistant points at vertices of a triangular grid | Aubrey Moore</title>
+<title>Converting a web2py web site to a static web site | Aubrey Moore</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
-<link rel="canonical" href="https://aubreymoore.github.io/blog/posts/calculate-geographical-coordinates-for-equidistant-points-at-vertices-of-a-triangular-grid/">
+<link rel="canonical" href="https://aubreymoore.github.io/blog/posts/web2py-to-static/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="../../assets/css/tipuesearch.css">
 <meta name="author" content="Aubrey Moore">
-<link rel="prev" href="../using-scrapy-to-extract-scientific-names-from-pestnet-fact-sheets/" title="Using Scrapy to Extract Scientific Names from PestNet Fact Sheets" type="text/html">
-<link rel="next" href="../web2py-to-static/" title="Converting a web2py web site to a static web site" type="text/html">
+<link rel="prev" href="../calculate-geographical-coordinates-for-equidistant-points-at-vertices-of-a-triangular-grid/" title="Calculate geographical coordinates for equidistant points at vertices of a triangular grid" type="text/html">
 <meta property="og:site_name" content="Aubrey Moore">
-<meta property="og:title" content="Calculate geographical coordinates for equidistant points at vertices ">
-<meta property="og:url" content="https://aubreymoore.github.io/blog/posts/calculate-geographical-coordinates-for-equidistant-points-at-vertices-of-a-triangular-grid/">
-<meta property="og:description" content="I needed to set up a grid of equally spaced insect pheromone traps. While it is
-convenient to put traps at the vertices of a rectangular grid, this is not
-optimal because nearest neighbors on the diag">
+<meta property="og:title" content="Converting a web2py web site to a static web site">
+<meta property="og:url" content="https://aubreymoore.github.io/blog/posts/web2py-to-static/">
+<meta property="og:description" content="I am building a web site using the web2py framework.  The site uses data stored
+in MySQL database to build an index page of crops. For each crop, there is a
+link to a page which is built to display al">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-05-28T09:33:46+10:00">
-<meta property="article:tag" content="GIS GPS KML">
+<meta property="article:tag" content="python web2py github">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -78,7 +77,7 @@ optimal because nearest neighbors on the diag">
         <div class="row">
             
             
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Calculate geographical coordinates for equidistant points at vertices of a triangular grid</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Converting a web2py web site to a static web site</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
@@ -93,27 +92,35 @@ optimal because nearest neighbors on the diag">
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<p>I needed to set up a grid of equally spaced insect pheromone traps. While it is
-convenient to put traps at the vertices of a rectangular grid, this is not
-optimal because nearest neighbors on the diagonals are further away than those
-within rows or columns (If the spacing within rows and columns is X, then the
-diagonal spacing is sqrt(0.75)*X).  For equidistant spacing, points are placed
-at vertices of a grid made with equilateral triangles. This python script
-returns such a grid of points and returns the data as a KML file containing
-latitude/longitude coordinates in decimal degrees.</p>
-<script src="https://gist.github.com/aubreymoore/7f3688e88556e08a8069623ecf48b68f.js"></script><p>The KML file may be displayed using Google Earth.</p>
-<p><img alt="example output" src="../../images/points.jpg"></p>
+<p>I am building a web site using the web2py framework.  The site uses data stored
+in MySQL database to build an index page of crops. For each crop, there is a
+link to a page which is built to display all pests attacking the crop.</p>
+<p>I would like to host
+a copy of this as a static site in GitHub pages.  Creating the static site was
+surprisingly easy:</p>
+<ol>
+<li>Use wget to save local a local copy of every page generated by the site:</li>
+</ol>
+<pre class="code literal-block"><span></span>wget --recursive --no-clobber --page-requisites \
+ --adjust-extension --convert-links \
+ --restrict-file-names=windows \
+ --no-parent \
+  http://127.0.0.1:8000/pestlist/default/crop_index
+</pre>
+
+
+<ol>
+<li>On the <strong>crop_index.html</strong> page, change links to the <strong>pest_index.html</strong> pages. Easily done using <strong>relace all</strong> in <strong>atom</strong> or some other
+editor.</li>
+</ol>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../categories/gis-gps-kml/" rel="tag">GIS GPS KML</a></li>
+<li><a class="tag p-category" href="../../categories/python-web2py-github/" rel="tag">python web2py github</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../using-scrapy-to-extract-scientific-names-from-pestnet-fact-sheets/" rel="prev" title="Using Scrapy to Extract Scientific Names from PestNet Fact Sheets">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../web2py-to-static/" rel="next" title="Converting a web2py web site to a static web site">Next post</a>
+                <a href="../calculate-geographical-coordinates-for-equidistant-points-at-vertices-of-a-triangular-grid/" rel="prev" title="Calculate geographical coordinates for equidistant points at vertices of a triangular grid">Previous post</a>
             </li>
         </ul></nav></aside></article>
 </div>

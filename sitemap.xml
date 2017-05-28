@@ -19,11 +19,11 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/archive.html</loc>
-  <lastmod>2017-05-27T23:37:00Z</lastmod>
+  <lastmod>2017-05-28T07:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/</loc>
-  <lastmod>2017-05-27T23:37:00Z</lastmod>
+  <lastmod>2017-05-28T07:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/anaconda/</loc>
@@ -66,6 +66,10 @@
   <lastmod>2017-02-11T10:13:00Z</lastmod>
  </url>
  <url>
+  <loc>https://aubreymoore.github.io/blog/categories/python-web2py-github/</loc>
+  <lastmod>2017-05-28T07:05:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://aubreymoore.github.io/blog/categories/python/</loc>
   <lastmod>2017-02-21T06:38:00Z</lastmod>
  </url>
@@ -103,7 +107,7 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/index-1.html</loc>
-  <lastmod>2017-05-27T23:37:00Z</lastmod>
+  <lastmod>2017-05-28T07:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/listings/</loc>
@@ -192,6 +196,10 @@
  <url>
   <loc>https://aubreymoore.github.io/blog/posts/using-the-species-api-to-mine-the-gbif-backbone-taxonomy/</loc>
   <lastmod>2017-04-21T22:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/posts/web2py-to-static/</loc>
+  <lastmod>2017-05-28T07:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/tipue_search.html</loc>
