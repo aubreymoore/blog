@@ -3,15 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Posts about web2py | Aubrey Moore</title>
+<title>Migrate a MySQL database to postgreql | Aubrey Moore</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
-<link rel="canonical" href="https://aubreymoore.github.io/blog/categories/web2py/">
+<link rel="canonical" href="https://aubreymoore.github.io/blog/posts/migrate-a-mysql-database-to-postgreql/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="../../assets/css/tipuesearch.css">
-<link rel="alternate" type="application/rss+xml" title="RSS for tag web2py" href="../web2py.xml">
+<meta name="author" content="Aubrey Moore">
+<link rel="prev" href="../web2py-to-static/" title="Converting a web2py web site to a static web site" type="text/html">
+<meta property="og:site_name" content="Aubrey Moore">
+<meta property="og:title" content="Migrate a MySQL database to postgreql">
+<meta property="og:url" content="https://aubreymoore.github.io/blog/posts/migrate-a-mysql-database-to-postgreql/">
+<meta property="og:description" content="Ran into some problems using MySQL on Dreamhost as the online database manager for my web2py PestList app.  Decided to upgrade the database to postgresql. DreamHost doesn't support pg, so I had to rev">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-06-11T20:16:24+10:00">
+<meta property="article:tag" content="MySQL">
+<meta property="article:tag" content="pgloader">
+<meta property="article:tag" content="postgresql">
+<meta property="article:tag" content="web2py">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -39,7 +50,7 @@
 <a href="../../archive.html">Archive</a>
                 </li>
 <li>
-<a href="../">Tags</a>
+<a href="../../categories/">Tags</a>
                 </li>
 <li>
 <a href="../../rss.xml">RSS feed</a>
@@ -50,7 +61,13 @@
 <span class="navbar-form navbar-left">
 <input type="text" id="tipue_search_input" class="form-control" placeholder="Search"></span>
 
-            <ul class="nav navbar-nav navbar-right"></ul>
+            <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="index.md" id="sourcelink">Source</a>
+    </li>
+
+                
+            </ul>
 </div>
 <!-- /.navbar-collapse -->
     </div>
@@ -61,24 +78,37 @@
         <div class="row">
             
             
-<article class="tagpage"><header><h1>Posts about web2py</h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Migrate a MySQL database to postgreql</a></h1>
+
         <div class="metadata">
-                <p class="feedlink"><a href="../web2py.xml" type="application/rss+xml">RSS feed</a></p>
+            <p class="byline author vcard"><span class="byline-name fn">
+                    Aubrey Moore
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-06-11T20:16:24+10:00" itemprop="datePublished" title="2017-06-11 20:16">2017-06-11 20:16</time></a></p>
+            
+        <p class="sourceline"><a href="index.md" id="sourcelink">Source</a></p>
+
         </div>
-    </header><ul class="postlist">
-<li>
-<time class="listdate" datetime="2017-06-11T20:16:24+10:00" title="2017-06-11 20:16">2017-06-11 20:16</time><a href="../../posts/migrate-a-mysql-database-to-postgreql/" class="listtitle">Migrate a MySQL database to postgreql</a><a></a>
-</li>
-        <li>
-<time class="listdate" datetime="2017-05-28T09:33:46+10:00" title="2017-05-28 09:33">2017-05-28 09:33</time><a href="../../posts/web2py-to-static/" class="listtitle">Converting a web2py web site to a static web site</a><a></a>
-</li>
-        <li>
-<time class="listdate" datetime="2017-02-21T13:01:06+10:00" title="2017-02-21 13:01">2017-02-21 13:01</time><a href="../../posts/play-pen/" class="listtitle">Install web2py in a Conda Virtual Environment</a><a></a>
-</li>
-        <li>
-<time class="listdate" datetime="2017-02-11T09:28:41+10:00" title="2017-02-11 09:28">2017-02-11 09:28</time><a href="../../posts/failed-attempt-to-run-wep2py-on-dreamhost/" class="listtitle">Failed Attempt to Run wep2py on Dreamhost</a><a></a>
-</li>
-    </ul></article>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Ran into some problems using <strong>MySQL</strong> on <strong>Dreamhost</strong> as the online database manager for my <strong>web2py PestList app</strong>.  Decided to upgrade the database to postgresql. <strong>DreamHost</strong> doesn't support pg, so I had to revert to running pg on localhost.  After several attempts to convert the <strong>MySQL</strong> tables to <strong>pg</strong>, I came across <strong>pgloader</strong>, which did the trick.  I simply created an empty <strong>pg</strong> database and ran the following command.</p>
+<pre class="code literal-block"><span></span>$ pgloader mysql://user:pass@mysql.guaminsects.net/pestlist postgresql://user:pass/localhost/import_test
+</pre>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/mysql/" rel="tag">MySQL</a></li>
+            <li><a class="tag p-category" href="../../categories/pgloader/" rel="tag">pgloader</a></li>
+            <li><a class="tag p-category" href="../../categories/postgresql/" rel="tag">postgresql</a></li>
+            <li><a class="tag p-category" href="../../categories/web2py/" rel="tag">web2py</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../web2py-to-static/" rel="prev" title="Converting a web2py web site to a static web site">Previous post</a>
+            </li>
+        </ul></nav></aside></article>
 </div>
         <!--End of body content-->
 

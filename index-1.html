@@ -65,7 +65,51 @@
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/publish-nikola-site-on-github/" class="u-url">Publish Nikola Site on GitHub</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-scrapy-to-find-a-string-in-a-web-site/" class="u-url">Using Scrapy to Find a String in a Web Site</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Aubrey Moore
+            </span></p>
+            <p class="dateline"><a href="posts/using-scrapy-to-find-a-string-in-a-web-site/" rel="bookmark"><time class="published dt-published" datetime="2017-02-11T19:57:33+10:00" title="2017-02-11 19:57">2017-02-11 19:57</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Last updated Sunday, 12. February 2017 07:53AM </p>
+<p>I wanted to find pages on the University of Guam College of Natural and Life Sciences Web Site containing a specific string. This short python script, which uses the <a href="https://scrapy.org/">scrapy</a> framework, does the trick:</p>
+<h4>test_spider.py</h4>
+<pre class="code literal-block"><span></span><span class="kn">from</span> <span class="nn">scrapy.spiders</span> <span class="kn">import</span> <span class="n">CrawlSpider</span><span class="p">,</span> <span class="n">Rule</span>
+<span class="kn">from</span> <span class="nn">scrapy.contrib.linkextractors</span> <span class="kn">import</span> <span class="n">LinkExtractor</span>
+
+<span class="k">class</span> <span class="nc">someSpider</span><span class="p">(</span><span class="n">CrawlSpider</span><span class="p">):</span>
+  <span class="n">name</span> <span class="o">=</span> <span class="s1">'crawltest'</span>
+  <span class="n">allowed_domains</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'cnas-re.uog.edu'</span><span class="p">]</span>
+  <span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'http://cnas-re.uog.edu'</span><span class="p">]</span>
+  <span class="n">rules</span> <span class="o">=</span> <span class="p">(</span> <span class="n">Rule</span><span class="p">(</span><span class="n">LinkExtractor</span><span class="p">(</span><span class="n">allow</span><span class="o">=</span><span class="p">()),</span> <span class="n">follow</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span><span class="n">callback</span><span class="o">=</span><span class="s1">'parse_item'</span><span class="p">),</span> <span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">parse_item</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+    <span class="n">target</span> <span class="o">=</span> <span class="s1">'bell pepper'</span>
+    <span class="n">log</span> <span class="o">=</span> <span class="s1">'test_spider_log.md'</span>
+    <span class="k">if</span> <span class="n">target</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">body</span><span class="p">):</span>
+      <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">log</span><span class="p">,</span> <span class="s1">'a'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">'**{} was found in &lt;{}&gt;</span><span class="se">\n</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">url</span><span class="p">))</span>
+    <span class="k">return</span>
+</pre>
+
+
+<h4>Executed from the command line using:</h4>
+<pre class="code literal-block"><span></span>scrapy runspider test_spider.py -s <span class="nv">DEPTH_LIMIT</span><span class="o">=</span>2
+</pre>
+
+
+<h4>Output: test_spider_log.md</h4>
+<p><strong>bell pepper</strong> was found in <a href="http://cnas-re.uog.edu/soils-of-guam/">http://cnas-re.uog.edu/soils-of-guam/</a></p>
+<p><strong>bell pepper</strong> was found in <a href="http://cnas-re.uog.edu/cnas-publications/?auth=&amp;limit=17&amp;tgid=&amp;type=&amp;usr=&amp;yr=">http://cnas-re.uog.edu/cnas-publications/?auth=&amp;limit=17&amp;tgid=&amp;type=&amp;usr=&amp;yr=</a></p>
+<p><strong>bell pepper</strong> was found in <a href="http://cnas-re.uog.edu/cnas-publications/?auth=&amp;tgid=115&amp;type=&amp;usr=&amp;yr=">http://cnas-re.uog.edu/cnas-publications/?auth=&amp;tgid=115&amp;type=&amp;usr=&amp;yr=</a></p>
+<p><strong>bell pepper</strong> was found in <a href="http://cnas-re.uog.edu/cnas-publications/?auth=&amp;tgid=66&amp;type=&amp;usr=&amp;yr=">http://cnas-re.uog.edu/cnas-publications/?auth=&amp;tgid=66&amp;type=&amp;usr=&amp;yr=</a></p>
+<hr>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/publish-nikola-site-on-github/" class="u-url">Publish Nikola Site on GitHub</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Aubrey Moore

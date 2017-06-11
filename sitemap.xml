@@ -19,11 +19,11 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/archive.html</loc>
-  <lastmod>2017-05-28T07:05:00Z</lastmod>
+  <lastmod>2017-06-11T10:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/</loc>
-  <lastmod>2017-05-28T07:21:00Z</lastmod>
+  <lastmod>2017-06-11T10:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/anaconda/</loc>
@@ -44,10 +44,6 @@
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/gbif/</loc>
   <lastmod>2017-04-21T23:59:00Z</lastmod>
- </url>
- <url>
-  <loc>https://aubreymoore.github.io/blog/categories/gis-gps-kml/</loc>
-  <lastmod>2017-05-27T23:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/gis/</loc>
@@ -74,8 +70,20 @@
   <lastmod>2017-05-28T07:21:00Z</lastmod>
  </url>
  <url>
+  <loc>https://aubreymoore.github.io/blog/categories/mysql/</loc>
+  <lastmod>2017-06-11T10:31:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://aubreymoore.github.io/blog/categories/nikola/</loc>
   <lastmod>2016-10-17T20:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/categories/pgloader/</loc>
+  <lastmod>2017-06-11T10:31:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/categories/postgresql/</loc>
+  <lastmod>2017-06-11T10:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/python-scrapy/</loc>
@@ -119,7 +127,7 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/index-1.html</loc>
-  <lastmod>2017-05-28T07:05:00Z</lastmod>
+  <lastmod>2017-06-11T10:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/listings/</loc>
@@ -164,6 +172,10 @@
  <url>
   <loc>https://aubreymoore.github.io/blog/posts/finding-lost-parents/</loc>
   <lastmod>2017-05-01T03:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/posts/migrate-a-mysql-database-to-postgreql/</loc>
+  <lastmod>2017-06-11T10:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/posts/nikola-site-is-on-github/</loc>
