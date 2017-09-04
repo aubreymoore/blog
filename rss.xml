@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Aubrey Moore</title><link>https://aubreymoore.github.io/blog/</link><description>All things techie.</description><atom:link type="application/rss+xml" rel="self" href="https://aubreymoore.github.io/blog/rss.xml"></atom:link><language>en</language><lastBuildDate>Sun, 11 Jun 2017 10:31:13 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Migrate a MySQL database to postgreql</title><link>https://aubreymoore.github.io/blog/posts/migrate-a-mysql-database-to-postgreql/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;Ran into some problems using &lt;strong&gt;MySQL&lt;/strong&gt; on &lt;strong&gt;Dreamhost&lt;/strong&gt; as the online database manager for my &lt;strong&gt;web2py PestList app&lt;/strong&gt;.  Decided to upgrade the database to postgresql. &lt;strong&gt;DreamHost&lt;/strong&gt; doesn't support pg, so I had to revert to running pg on localhost.  After several attempts to convert the &lt;strong&gt;MySQL&lt;/strong&gt; tables to &lt;strong&gt;pg&lt;/strong&gt;, I came across &lt;strong&gt;pgloader&lt;/strong&gt;, which did the trick.  I simply created an empty &lt;strong&gt;pg&lt;/strong&gt; database and ran the following command.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Aubrey Moore</title><link>https://aubreymoore.github.io/blog/</link><description>All things techie.</description><atom:link rel="self" href="https://aubreymoore.github.io/blog/rss.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 04 Sep 2017 09:11:29 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Documentary on Algorithms</title><link>https://aubreymoore.github.io/blog/posts/documentary-on-algorithms/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;Just watched a very interesting &lt;a href="https://www.netflix.com/watch/80095881?trackId=13752289&amp;amp;tctx=0%2C0%2C4f12424f4359b0f8b32bdd09fc59ea76a07bbb6f%3A84529c0d4cedd514187a2a7bc19a7313ee6513b3"&gt;documentary on algorithms on Netflix&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Of particular interest to me was a segment on how buble bees solve the "travelling salesman problem". Harmonic radar waws used in this research.&lt;/p&gt;&lt;/div&gt;</description><guid>https://aubreymoore.github.io/blog/posts/documentary-on-algorithms/</guid><pubDate>Mon, 04 Sep 2017 09:00:54 GMT</pubDate></item><item><title>Migrate a MySQL database to postgreql</title><link>https://aubreymoore.github.io/blog/posts/migrate-a-mysql-database-to-postgreql/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;Ran into some problems using &lt;strong&gt;MySQL&lt;/strong&gt; on &lt;strong&gt;Dreamhost&lt;/strong&gt; as the online database manager for my &lt;strong&gt;web2py PestList app&lt;/strong&gt;.  Decided to upgrade the database to postgresql. &lt;strong&gt;DreamHost&lt;/strong&gt; doesn't support pg, so I had to revert to running pg on localhost.  After several attempts to convert the &lt;strong&gt;MySQL&lt;/strong&gt; tables to &lt;strong&gt;pg&lt;/strong&gt;, I came across &lt;strong&gt;pgloader&lt;/strong&gt;, which did the trick.  I simply created an empty &lt;strong&gt;pg&lt;/strong&gt; database and ran the following command.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;$ pgloader mysql://user:pass@mysql.guaminsects.net/pestlist postgresql://user:pass/localhost/import_test
 &lt;/pre&gt;&lt;/div&gt;</description><category>MySQL</category><category>pgloader</category><category>postgresql</category><category>web2py</category><guid>https://aubreymoore.github.io/blog/posts/migrate-a-mysql-database-to-postgreql/</guid><pubDate>Sun, 11 Jun 2017 10:16:24 GMT</pubDate></item><item><title>Converting a web2py web site to a static web site</title><link>https://aubreymoore.github.io/blog/posts/web2py-to-static/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;p&gt;I am building a web site using the web2py framework.  The site uses data stored
 in MySQL database to build an index page of crops. For each crop, there is a
@@ -474,40 +475,4 @@ rm -rf playpen
 &lt;span class="p"&gt;}&lt;/span&gt;
 
 &lt;span class="nt"&gt;tr&lt;/span&gt;&lt;span class="nd"&gt;:nth-child&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;even&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nb"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#f2f2f2&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>css</category><category>Nikola</category><guid>https://aubreymoore.github.io/blog/posts/tweeking-nikola-css-to-improve-table-display/</guid><pubDate>Mon, 20 Feb 2017 09:28:56 GMT</pubDate></item><item><title>USDA Farm Bill Funding for Coconut Rhinoceros Beetle Projects in Guam and Hawaii</title><link>https://aubreymoore.github.io/blog/posts/usda-farm-bill-funding-for-coconut-rhinoceros-beetle-projects-in-guam-and-hawaii/</link><dc:creator>Aubrey Moore</dc:creator><description>&lt;div&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Fiscal year&lt;sup&gt;*&lt;/sup&gt;&lt;/th&gt;
-&lt;th align="right"&gt;Guam&lt;/th&gt;
-&lt;th align="right"&gt;Hawaii&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="http://www.aphis.usda.gov/newsroom/2014/04/pdf/fy14_farm_bill_spending_plan.pdf"&gt;2014&lt;/a&gt;&lt;/td&gt;
-&lt;td align="right"&gt;$180,000&lt;/td&gt;
-&lt;td align="right"&gt;$2,448,000&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="http://www.aphis.usda.gov/plant_health/farmbill-section10007/fy15/FY15-FarmBill10007-PlantPlestandDisease-Spending-Plan.pdf"&gt;2015&lt;/a&gt;&lt;/td&gt;
-&lt;td align="right"&gt;$179,844&lt;/td&gt;
-&lt;td align="right"&gt;$2,200,000&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://www.aphis.usda.gov/plant_health/farmbill-section10007/fy16/Plant-Pest-Disease-FB-Spending-Plan-FY16.pdf"&gt;2016&lt;/a&gt;&lt;/td&gt;
-&lt;td align="right"&gt;$250,000&lt;/td&gt;
-&lt;td align="right"&gt;$1,399,384&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://www.aphis.usda.gov/plant_health/farmbill-section10007/fy17/FY2017-PPDMDPP-Spending-Plan.pdf"&gt;2017&lt;/a&gt;&lt;/td&gt;
-&lt;td align="right"&gt;$475,000&lt;/td&gt;
-&lt;td align="right"&gt;$1,225,000&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;
-&lt;td align="right"&gt;&lt;strong&gt;$1,084,844&lt;/strong&gt;&lt;/td&gt;
-&lt;td align="right"&gt;&lt;strong&gt;$7,272,384&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;sup&gt;*&lt;/sup&gt;Click on fiscal year for details.&lt;/p&gt;&lt;/div&gt;</description><guid>https://aubreymoore.github.io/blog/posts/usda-farm-bill-funding-for-coconut-rhinoceros-beetle-projects-in-guam-and-hawaii/</guid><pubDate>Mon, 20 Feb 2017 07:08:40 GMT</pubDate></item></channel></rss>
+&lt;/pre&gt;&lt;/div&gt;</description><category>css</category><category>Nikola</category><guid>https://aubreymoore.github.io/blog/posts/tweeking-nikola-css-to-improve-table-display/</guid><pubDate>Mon, 20 Feb 2017 09:28:56 GMT</pubDate></item></channel></rss>

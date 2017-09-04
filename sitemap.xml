@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/archive.html</loc>
-  <lastmod>2017-06-11T10:31:00Z</lastmod>
+  <lastmod>2017-09-04T09:11:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/</loc>
@@ -127,7 +127,7 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/index-1.html</loc>
-  <lastmod>2017-06-11T10:31:00Z</lastmod>
+  <lastmod>2017-09-04T09:11:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/listings/</loc>
@@ -164,6 +164,10 @@
  <url>
   <loc>https://aubreymoore.github.io/blog/posts/calculate-geographical-coordinates-for-equidistant-points-at-vertices-of-a-triangular-grid/</loc>
   <lastmod>2017-05-27T23:37:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/posts/documentary-on-algorithms/</loc>
+  <lastmod>2017-09-04T09:11:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/posts/failed-attempt-to-run-wep2py-on-dreamhost/</loc>
