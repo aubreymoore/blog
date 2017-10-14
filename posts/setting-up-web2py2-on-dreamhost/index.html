@@ -105,53 +105,77 @@ by Tim Korb. Accessed 2017-10-14.</p>
 </li>
 <li>
 <p>Site configuration options include:</p>
-</li>
+<ul>
 <li>Remove WWW from beginning of name</li>
 <li>use PHP 7.0 FastCGI (default)</li>
 <li>use HTTPS</li>
-<li>
-<p>use Passenger (Click OK on dialog about /public)</p>
+<li>use Passenger (Click OK on dialog about /public)</li>
+</ul>
 </li>
 <li>
 <p>Use a shell account to open a terminal window on your DreamHost server.</p>
-<p>ssh <user>@web2py.guaminsects.net</user></p>
+<pre class="code literal-block"><span></span>ssh &lt;user&gt;@web2py.guaminsects.net
+</pre>
+
+
 </li>
 <li>
 <p>Create a virtual python environment in ~/python (could go elsewhere, but remember the path):</p>
-<p>cd ~
-  virtualenv python</p>
+<pre class="code literal-block"><span></span>cd ~
+virtualenv python
+</pre>
+
+
 </li>
 <li>
 <p>Clone sources from the Web2Py github site into a top level directory called web2py:</p>
-<p>git clone --recursive https://github.com/web2py/web2py.git
-  cp -a web2py/. web2py.guaminsects.net/</p>
+<pre class="code literal-block"><span></span>git clone --recursive https://github.com/web2py/web2py.git
+cp -a web2py/. web2py.guaminsects.net/
+</pre>
+
+
 </li>
 <li>
 <p>Copy handlers/wsgihandler.py to passenger_wsgi.py:</p>
-<p>cd web2py.guaminsects.net
-  cp handlers/wsgihandler.py passenger_wsgi.py</p>
+<pre class="code literal-block"><span></span>cd web2py.guaminsects.net
+cp handlers/wsgihandler.py passenger_wsgi.py
+</pre>
+
+
 </li>
 <li>
 <p>Edit passenger_wsgi.py. Insert these two lines at immediately before the line "if not os.path.isdir('applications'):". Note that the INTERP path points to the virtualenv created earlier:</p>
-<p>INTERP = os.path.join(os.environ['HOME'], 'python', 'bin', 'python')
-  if sys.executable != INTERP: os.execl(INTERP, INTERP, *sys.argv)</p>
+<pre class="code literal-block"><span></span>INTERP = os.path.join(os.environ['HOME'], 'python', 'bin', 'python')
+if sys.executable != INTERP: os.execl(INTERP, INTERP, *sys.argv)
+</pre>
+
+
 </li>
 <li>
 <p>Create tmp/restart.txt. Touch this file to force relaunch of Web2Py via Passenger:</p>
-<p>mkdir tmp
-  touch tmp/restart.txt</p>
+<pre class="code literal-block"><span></span>mkdir tmp
+touch tmp/restart.txt
+</pre>
+
+
 </li>
 <li>
 <p>Set an admin password.  This command will give errors (for among other reasons, a user process cannot listen on port 443), but it will have generated the necessary parameters_443.py file.</p>
-<p>python web2py.py -p 443 -a "secret-secure-password"</p>
+<pre class="code literal-block"><span></span>python web2py.py -p 443 -a "secret-secure-password"
+</pre>
+
+
 </li>
 <li>
 <p>The Web2Py environment should now be operational. Visit https://web2py.guaminsects.net to see it.</p>
 </li>
 <li>
 <p>Clean up. Delete the top level directory where the web2py git repository was downloaded:</p>
-<p>cd ~
-  rm -rf web2py</p>
+<pre class="code literal-block"><span></span>cd ~
+rm -rf web2py
+</pre>
+
+
 </li>
 </ul>
 </div>
