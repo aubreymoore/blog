@@ -13,7 +13,7 @@
 <link rel="canonical" href="https://aubreymoore.github.io/blog/">
 <link rel="next" href="index-1.html" type="text/html">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="assets/css/tipuesearch.css">
-<link rel="prefetch" href="posts/documentary-on-algorithms/" type="text/html">
+<link rel="prefetch" href="posts/setting-up-web2py2-on-dreamhost/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -66,7 +66,77 @@
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/documentary-on-algorithms/" class="u-url">Documentary on Algorithms</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/setting-up-web2py2-on-dreamhost/" class="u-url">Setting Up web2py2 on DreamHost</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Aubrey Moore
+            </span></p>
+            <p class="dateline"><a href="posts/setting-up-web2py2-on-dreamhost/" rel="bookmark"><time class="published dt-published" datetime="2017-10-14T19:24:38+10:00" title="2017-10-14 19:24">2017-10-14 19:24</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Reference:
+http://www.bikmort.com/dokuwiki/web2py_on_dreamhost
+by Tim Korb. Accessed 2017-10-14.</p>
+<p>Tim's directions worked very well for me with minor tweaks.</p>
+<ul>
+<li>
+<p>Create a fully-hosted domain at http://panel.dreamhost.com. I used web2py.guaminsects.net.</p>
+</li>
+<li>
+<p>Site configuration options include:</p>
+</li>
+<li>Remove WWW from beginning of name</li>
+<li>use PHP 7.0 FastCGI (default)</li>
+<li>use HTTPS</li>
+<li>
+<p>use Passenger (Click OK on dialog about /public)</p>
+</li>
+<li>
+<p>Use a shell account to open a terminal window on your DreamHost server.</p>
+<p>ssh <user>@web2py.guaminsects.net</user></p>
+</li>
+<li>
+<p>Create a virtual python environment in ~/python (could go elsewhere, but remember the path):</p>
+<p>cd ~
+  virtualenv python</p>
+</li>
+<li>
+<p>Clone sources from the Web2Py github site into a top level directory called web2py:</p>
+<p>git clone --recursive https://github.com/web2py/web2py.git
+  cp -a web2py/. web2py.guaminsects.net/</p>
+</li>
+<li>
+<p>Copy handlers/wsgihandler.py to passenger_wsgi.py:</p>
+<p>cd web2py.guaminsects.net
+  cp handlers/wsgihandler.py passenger_wsgi.py</p>
+</li>
+<li>
+<p>Edit passenger_wsgi.py. Insert these two lines at immediately before the line "if not os.path.isdir('applications'):". Note that the INTERP path points to the virtualenv created earlier:</p>
+<p>INTERP = os.path.join(os.environ['HOME'], 'python', 'bin', 'python')
+  if sys.executable != INTERP: os.execl(INTERP, INTERP, *sys.argv)</p>
+</li>
+<li>
+<p>Create tmp/restart.txt. Touch this file to force relaunch of Web2Py via Passenger:</p>
+<p>mkdir tmp
+  touch tmp/restart.txt</p>
+</li>
+<li>
+<p>Set an admin password.  This command will give errors (for among other reasons, a user process cannot listen on port 443), but it will have generated the necessary parameters_443.py file.</p>
+<p>python web2py.py -p 443 -a "secret-secure-password"</p>
+</li>
+<li>
+<p>The Web2Py environment should now be operational. Visit https://web2py.guaminsects.net to see it.</p>
+</li>
+<li>
+<p>Clean up. Delete the top level directory where the web2py git repository was downloaded:</p>
+<p>cd ~
+  rm -rf web2py</p>
+</li>
+</ul>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/documentary-on-algorithms/" class="u-url">Documentary on Algorithms</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Aubrey Moore
@@ -637,32 +707,6 @@ rm web2py_src.zip
 <pre class="code literal-block"><span></span>conda remove -n playpen --all
 <span class="nb">cd</span> ..
 rm -rf playpen
-</pre>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/tweeking-nikola-css-to-improve-table-display/" class="u-url">Tweeking Nikola CSS to Improve Table Display</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Aubrey Moore
-            </span></p>
-            <p class="dateline"><a href="posts/tweeking-nikola-css-to-improve-table-display/" rel="bookmark"><time class="published dt-published" datetime="2017-02-20T19:28:56+10:00" title="2017-02-20 19:28">2017-02-20 19:28</time></a></p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p>Crappy default styling of tables was fixed by adding this file:</p>
-<p><strong>~nik/mysite/files/assets/css/custom.css</strong> **</p>
-<pre class="code literal-block"><span></span><span class="c">/* Tweeks by Aubrey Moore */</span>
-
-<span class="nt">td</span> <span class="p">{</span>
-    <span class="nb">padding</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nt">th</span> <span class="p">{</span>
-    <span class="nb">text-align</span><span class="o">:</span> <span class="nb">center</span><span class="p">;</span>
-    <span class="nb">padding</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nt">tr</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">even</span><span class="o">)</span><span class="p">{</span><span class="nb">background-color</span><span class="o">:</span> <span class="m">#f2f2f2</span><span class="p">}</span>
 </pre>
 </div>
     </div>

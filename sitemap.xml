@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/archive.html</loc>
-  <lastmod>2017-09-04T09:11:00Z</lastmod>
+  <lastmod>2017-10-14T09:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/categories/</loc>
@@ -127,7 +127,7 @@
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/index-1.html</loc>
-  <lastmod>2017-09-04T09:11:00Z</lastmod>
+  <lastmod>2017-10-14T09:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/listings/</loc>
@@ -196,6 +196,10 @@
  <url>
   <loc>https://aubreymoore.github.io/blog/posts/setting-up-an-online-weather-station/</loc>
   <lastmod>2017-04-08T16:44:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aubreymoore.github.io/blog/posts/setting-up-web2py2-on-dreamhost/</loc>
+  <lastmod>2017-10-14T09:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://aubreymoore.github.io/blog/posts/taxonomic-notes/</loc>
