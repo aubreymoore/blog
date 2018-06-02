@@ -15,6 +15,7 @@
 | [2015](http://www.aphis.usda.gov/plant_health/farmbill-section10007/fy15/FY15-FarmBill10007-PlantPlestandDisease-Spending-Plan.pdf) | $179,844 | $2,200,000 |
 | [2016](https://www.aphis.usda.gov/plant_health/farmbill-section10007/fy16/Plant-Pest-Disease-FB-Spending-Plan-FY16.pdf) | $250,000 | $1,399,384 |
 | [2017](https://www.aphis.usda.gov/plant_health/farmbill-section10007/fy17/FY2017-PPDMDPP-Spending-Plan.pdf) | $475,000 | $1,225,000 |
-| **Total** | **$1,084,844** | **$7,272,384** |
+| [2018](https://www.aphis.usda.gov/plant_health/farmbill-section10007/fy18/FY2018-PPDMDPP-Spending-Plan.pdf) | $400,000 | $1,891,880 |
+| **Total** | **$1,484,844** | **$9,164,264** |
 
 <sup>*</sup>Click on fiscal year for details.
